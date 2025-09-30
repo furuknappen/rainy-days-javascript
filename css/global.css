@@ -9,3 +9,10 @@ a {
   text-decoration: none;
 }
 
+/*............ Desktops ................*/
+@media (min-width: 2550px) {
+  body {
+    padding-inline: 20rem;
+  }
+
+}
