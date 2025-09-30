@@ -1,43 +1,76 @@
 .genderPhotoDiv {
-  /* display:block; */
   background-color: aqua;
   display: flex;
-  justify-content:center;
-  align-items:flex-end;
-  /* margin-inline: 10% */
-  gap: 0;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.genderPhotoDivCouple {
+  display: none;
 }
 
 .pictureDiv {
-  background: orange;  
-  display:flex;
- /* position: relative; */
-  width:100vw;
-  display:flex;
-  justify-content: center;
-  align-items:end; 
-
+  background: orange;
+  display: flex;
+  width: 100vw;
+  display: flex;
+  justify-content: start;
+  align-items: end;
 }
 
 .genderPhoto {
- /* flex:1; */
   height: auto;
   width: 100%;
-  /* max-width: 920px; */
-  /* border: 1px solid red; */
   margin: 0px;
   position: relative;
 }
 
-
 .genderBtn {
-  position:absolute;
-  margin:50px;
+  /* position:static; */
+  /* display:block; */
+  margin: 5vw;
+  margin-right: 1vw;
   border-radius: 3px;
-  font-size: 2.5rem;
-  font-family: 'overpass mono';
-  padding: 13px 19px 4px 19px;
+  font-size: 4.5vw;
+  font-family: "overpass mono";
+  padding: 8px 19px 4px 19px;
   border: none;
-  
+}
+.genderButtonsDiv {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.genderPhotoSingle {
+  height: auto;
+  width: 100%;
 }
 
+/* .............. iPads (tablets) - Landscape ............ */
+@media (min-width: 769px) /*and (max-width: 1024px) */ {
+  .genderPhotoDivSingle {
+    display: none;
+  }
+
+  .genderPhotoDivCouple {
+    display: flex;
+  }
+
+  .pictureDiv {
+    justify-content: center;
+    align-items: end;
+  }
+
+  .genderBtn {
+    position: absolute;
+    margin: 3vw;
+    font-size: 2.5vw;
+    padding: 8px 19px 4px 19px;
+  }
+
+  .genderPhotoSingle {
+    display: none;
+  }
+}
