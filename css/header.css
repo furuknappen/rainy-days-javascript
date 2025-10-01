@@ -76,7 +76,7 @@ header {
 
   #headerSvgs {
     display: flex;
-    padding-inline: 2rem;
+
   }
 
   .headerSvg {
@@ -97,9 +97,9 @@ header {
   }
 
   .navLinks {
-    display: flex;
     max-width: 70rem;
     font-size: 1.5rem;
+    justify-self: center;
   }
 
   #hamburgerBTN {
@@ -108,7 +108,7 @@ header {
 
   #headerSvgs {
     display: flex;
-    padding-inline: 3rem;
+    /* padding-inline: 3rem; */
   }
 
   .headerSvg {

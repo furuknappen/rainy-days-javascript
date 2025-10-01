@@ -23,7 +23,7 @@ li {
 
 /*............ Desktops ................*/
 @media (min-width: 2550px) {
-  body {
+  main {
     padding-inline: 20rem;
   }
 
