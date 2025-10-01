@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,8 +13,7 @@ li {
   list-style-type: none;
 }
 
-
-.title{
+.title {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 1.5rem;
@@ -26,12 +25,45 @@ li {
   main {
     padding-inline: 20rem;
   }
-
 }
 
 h1 {
-  font-family: 'Open sans';
+  font-family: "Open sans";
   font-weight: 400;
   font-size: 1.5rem;
   padding: 1rem;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.8rem;
+  border: 2px solid var(--accentColor3);
+  border-radius: 3px;
+}
+
+input:focus {
+  border-style: solid;
+  border-color: var(--accentColor1);
+  outline: none;
+}
+
+button {
+  display: block;
+  padding: 0.6rem 2rem;
+  font-family: var(--second-font);
+  font-size: 1rem;
+  background-color: var(--accentColor1);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: var(--logoColor);
+}
+
+button:active {
+  background-color: var(--darkestColor);
+  color: white;
 }

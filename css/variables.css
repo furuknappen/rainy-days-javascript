@@ -1,7 +1,7 @@
 :root {
   /* --main-font: 'Montserrat'; */
   --main-font: "Montserrat", sans-serif;
-  --second-font: "Open  sans";
+  --second-font: "Open sans";
   --third-font: "Overpass Mono";
 }
 
@@ -15,4 +15,5 @@
   --accentColor3: #a9deec;
   --accentColor4: #def4f9;
   --accentColor5: #f5fbfd;
+  --darkestColor: #051C22
 }
