@@ -33,10 +33,32 @@
   margin-right: 1vw;
   border-radius: 3px;
   font-size: 4.5vw;
-  font-family: "overpass mono";
-  padding: 8px 19px 4px 19px;
-  border: none;
+background-color: var(--accentColor4);
+  padding: 10px 19px 4px;
+  font-family: var(--third-font) ;
+ border-style: none;
+  color: var(--mainColor);
+
 }
+.genderBtn a {
+ color: var(--mainColor)
+}
+
+
+.genderBtn:hover{
+   background-color: var(--accentColor3);
+}
+
+.genderBtn:active {
+   background-color: var(--accentColor2);
+  
+}
+/* .genderBtn:active ~ .genderBtn a{
+  color: white;
+
+  
+} */
+
 .genderButtonsDiv {
   position: absolute;
   display: flex;
@@ -66,7 +88,7 @@
   .genderBtn {
     position: absolute;
     margin: 3vw;
-    font-size: 2.5vw;
+    font-size: 2vw;
     padding: 8px 19px 4px 19px;
   }
 
@@ -74,3 +96,6 @@
     display: none;
   }
 }
+
+
+

@@ -5,8 +5,20 @@
 }
 
 a {
-  color:black;
+  /* color:black; */
   text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+.title{
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 /*............ Desktops ................*/
@@ -15,4 +27,11 @@ a {
     padding-inline: 20rem;
   }
 
+}
+
+h1 {
+  font-family: 'Open sans';
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 1rem;
 }

@@ -20,9 +20,10 @@ header {
 }
 
 .navLink {
-  color: black;
+
   text-decoration: transparent;
-  font-family: "Overpass Mono";
+  font-family: var(--third-font);
+  color: var(--mainColor);
   text-decoration-thickness: 2px;
   padding:1.5rem;
 }
@@ -114,3 +115,6 @@ header {
     padding-inline: 1rem;
   }
 }
+
+
+

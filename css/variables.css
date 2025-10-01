@@ -1,0 +1,18 @@
+:root {
+  /* --main-font: 'Montserrat'; */
+  --main-font: "Montserrat", sans-serif;
+  --second-font: "Open  sans";
+  --third-font: "Overpass Mono";
+}
+
+/* TODO: fix root font both in variables but also in card h1 */
+
+:root {
+  --logoColor: #0A3641;
+  --mainColor: #1E2832; 
+  --accentColor1: #2b788b;
+  --accentColor2: #80c3d4;
+  --accentColor3: #a9deec;
+  --accentColor4: #def4f9;
+  --accentColor5: #f5fbfd;
+}
