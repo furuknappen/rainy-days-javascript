@@ -1,4 +1,4 @@
-/* TODO: make footer */
+
 
 footer {
   background-color: var(--mainColor);
@@ -62,7 +62,7 @@ footer .logo {
 
 footer p {
   justify-self: center;
-  padding: 2rem;
+  padding-bottom: 2rem;
 }
 
 .mobileLinks {
