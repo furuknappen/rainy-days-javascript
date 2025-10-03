@@ -7,6 +7,11 @@
 a {
   /* color:black; */
   text-decoration: none;
+
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 li {
@@ -24,6 +29,12 @@ li {
 @media (min-width: 2550px) {
   main {
     padding-inline: 20rem;
+  
+  } 
+
+   #gridContainerHomepage {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 40%;
   }
 }
 /* ------------- */
@@ -31,7 +42,7 @@ h1 {
   font-family: "Open sans";
   font-weight: 400;
   font-size: 1.5rem;
-  padding: 1rem;
+ 
 }
 
 input {
@@ -67,3 +78,5 @@ button:active {
   background-color: var(--darkestColor);
   color: white;
 }
+
+

@@ -14,7 +14,7 @@ footer {
   /* padding: 9vw 15vw; */
   padding-inline: clamp(15%, 12%, 8rem );
   /* padding-inline: 10%; */
-   padding-block: 9vw;
+  padding-block: 9vw;
  
 }
 
