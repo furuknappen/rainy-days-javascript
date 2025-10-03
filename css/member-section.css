@@ -14,12 +14,15 @@
   font-weight: bold;
   letter-spacing: 2%;
   font-size: 1.5rem;
+  color:black;
+
 }
 
 .memberDiv p {
   font-family: var(--main-font);
   margin-inline: 3rem;
   margin-bottom: 1rem;
+  color:black;
 }
 
 .memberInput {
