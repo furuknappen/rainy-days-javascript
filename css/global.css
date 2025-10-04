@@ -82,9 +82,3 @@ button:active {
   color: white;
 }
 
-/* .............. iPads (tablets) - Landscape ............ */
-@media (min-width: 768px)  {
-main {
-  display:flex;
-}
-}

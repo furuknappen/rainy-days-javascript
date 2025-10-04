@@ -29,6 +29,12 @@ h1 {
 
 }
 
+/* .............. iPads (tablets) - Landscape ............ */
+@media (min-width: 768px)  {
+.shoppingMain {
+  display:flex;
+}
+}
 
 
 
