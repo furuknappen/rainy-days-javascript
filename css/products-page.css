@@ -1,0 +1,57 @@
+.productsHeadingDiv {
+  /* border: 2px solid red; */
+margin-inline: auto;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  text-wrap: nowrap;
+  margin-inline: 1rem;
+  align-items: start;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 20px;
+  /* margin-inline: auto; */
+  /* width: 90%; */
+  text-wrap: wrap;
+  /* border: 2px solid red; */
+
+}
+h1 {
+  padding: 1rem;
+  color: black;
+   /* border: 2px solid red; */
+
+}
+
+
+
+
+/* .............. iPads (tablets) - Landscape ............ */
+@media (min-width: 769px) /*and (max-width: 1024px) */ {
+  .gridContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    column-gap: 20px;
+    /* margin-inline: 8vw; */
+    /* width: 100%; */
+ 
+  }
+}
+
+/* ............ Desktops ................*/
+@media (min-width: 1025px) {
+
+  /* .gridContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    margin-inline: auto;
+    width: 80%;
+     column-gap: auto;
+    
+  } */
+}

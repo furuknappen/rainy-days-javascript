@@ -1,4 +1,4 @@
-.gridContainer {
+/* .gridContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 10px;
@@ -6,9 +6,8 @@
   margin-inline: auto;
   width: 90%;
   text-wrap: wrap;
-  /* margin-top:2rem */
 
-}
+} */
 
 .card {
   /* background-color: aquamarine; */
@@ -64,29 +63,13 @@
   margin-top: 1.2em;
 
 }
-/* .............. iPads (tablets) - Landscape ............ */
-@media (min-width: 769px) /*and (max-width: 1024px) */ {
-  .gridContainer {
-    grid-template-columns: 1fr 1fr ;
-    column-gap: 20px;
-    margin-inline: 8vw;
-    width: 100%;
-      /* max-width: 1500px */
-  }
-}
+
 
 
 /*............ Desktops ................*/
 @media (min-width: 1025px) {
 
-  .gridContainer {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 20px;
-    margin-inline: auto;
-    width: 80%;
-     column-gap: auto;
-      /* max-width: 1500px */
-  }
+
 
  .card{
   max-width: 300px;}
