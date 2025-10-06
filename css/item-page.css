@@ -1,0 +1,55 @@
+.flexDiv {
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+
+}
+
+.itemImage{
+  width: 50rem;
+}
+
+.textSide {
+ padding-block: 5rem
+}
+
+
+
+.h1Itemname {
+  font-family: var(--main-font);
+  padding-inline: 0px;
+  font-size: 3rem;
+}
+
+.price {
+ font-family: var(--second-font);
+ font-size: 2rem;
+ padding-bottom: 2rem;
+
+
+}
+
+.infoText {
+ font-family: var(--second-font);
+  font-size: 2rem;
+  margin-block: 2rem;
+  width: 30rem
+}
+
+.sizeBtn{
+  padding-inline: 0.5em;
+  padding-block: 0.3em;
+  background-color: white;
+  border-color: var(--accentColor2);
+  border-radius: 3px;
+  border-style: solid;
+  margin: 0.2rem;
+  font-size: 2rem;
+}
+
+.buttonDiv {
+   margin-block: 2rem;
+}
+.itempageBtn{
+  font-size: 2rem;
+}

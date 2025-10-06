@@ -61,7 +61,7 @@ input:focus {
   outline: none;
 }
 
-button {
+.btn {
   display: block;
   padding: 0.6rem 2rem;
   font-family: var(--second-font);
@@ -73,11 +73,11 @@ button {
   border-radius: 3px;
 }
 
-button:hover {
+.btn:hover {
   background-color: var(--logoColor);
 }
 
-button:active {
+.btn:active {
   background-color: var(--darkestColor);
   color: white;
 }

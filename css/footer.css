@@ -7,7 +7,7 @@ footer {
 
 }
 
-.flexDiv {
+.flexDivFooter {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -77,7 +77,7 @@ footer p {
 /* .............. iPads (tablets) - Landscape ............ */
 @media (min-width: 769px) /*and (max-width: 1024px) */ {
 
-  .flexDiv {
+  .flexDivFooter {
       flex-direction: row;
   }
 
