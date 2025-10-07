@@ -1,0 +1,144 @@
+.cartSummaryDiv {
+  width: 60%; 
+  position:relative;
+}
+
+.heading {
+ font-family: var(--second-font);
+ font-size: 2rem;
+ font-weight: bold;
+ 
+}
+
+h2 {
+  font-family: var(--second-font);
+  font-size: 1.5rem;
+  font-weight:500;
+  margin-bottom: 1rem;
+}
+
+.itemInfo {
+  font-family: var(--second-font);
+  font-size: 1rem;
+}
+
+.productLine {
+  /* border: 1px solid red; */
+  display:flex;
+  flex-direction: row;
+  align-items: center ;
+  justify-content: space-between;
+  border-top: 1px solid var(--accentColor4);
+   border-bottom: 1px solid var(--accentColor4);
+  margin-right: 1rem;
+}
+
+
+.productLine img {
+  width: 5rem;
+  aspect-ratio: 1 / 1;
+}
+
+
+
+
+
+/* quantity  */
+.quantityDiv {
+  /* border: 1px solid red; */
+  display:flex;
+
+}
+
+.quantityBtn {
+  background-color: var(--accentColor1);
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  position:relative;
+  height:100%;
+  border: none
+
+}
+
+.plusBtn {
+ /* left: 30px */
+ border-top-left-radius: 3px;
+border-bottom-left-radius: 3px;
+}
+
+.minusBtn {
+ padding-inline: 1.3rem;
+ padding-top: 0.3rem;
+ padding-bottom: 0.7rem;
+ border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+}
+
+.quantityInput {
+ width: 4rem;
+ border-radius: 0px;
+
+}
+
+
+.icon-tabler-trash {
+  margin-right: 3rem
+}
+
+
+
+/* side bar */
+.orderSummaryDiv {
+  border-radius: 3px;
+  border: 2px solid var(--accentColor3);
+  padding: 2rem;
+ 
+}
+
+
+.flexBetween {
+  display:flex;
+  justify-content: space-between;
+}
+
+.flexBetween a {
+  color: var(--accentColor1);
+  font-family: var(--second-font);
+  font-size: 0.7rem;
+  text-decoration: underline;
+  padding-left: 1rem;
+  padding:0px;
+}
+.orderInfo {
+ font-family: var(--second-font);
+ font-size: 1rem;
+ font-weight:bold;
+ margin-top:2rem;
+}
+
+hr{
+  height: 2px;
+  /* border-color: rgb(219, 52, 121); */
+}
+
+.totalDiv{
+  margin-top: 2rem;
+}
+
+.cartpageBtn {
+  margin-top: 8rem;
+  margin-inline: auto
+}
+
+.BackToBtn{
+  position: absolute;
+  bottom: 0px;
+
+
+}
+
+/* main > div {
+  border: 1px solid red;
+
+} */
