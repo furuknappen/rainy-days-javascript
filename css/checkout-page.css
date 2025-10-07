@@ -1,0 +1,85 @@
+
+.mainCheckoutPage{
+padding: 4rem;
+
+
+}
+.sectionContact{
+  display: flex;
+  flex-direction: column;
+
+
+}
+.sectionOrderSummary{
+  width: 30%;
+
+}
+
+.miniCart {
+display:flex;
+align-items: center;
+justify-content: space-between;
+
+
+}
+.miniCart img{
+  height: 4rem;
+  width: 4rem;
+
+}
+
+.expressBtn {
+  height: 3rem;
+  width: 3rem; 
+}
+
+.paypal{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or contain, depending on what you want */
+  object-position: center;
+  display: block;
+}
+
+/* .klarna{
+  clip-path: inset(10% 0 10% 0);
+} */
+
+.dividerDiv {
+  display: flex;
+  align-items: center;
+  width:100%;
+  font-family: var(--second-font)
+}
+
+.dividerDiv hr {
+  width: 100%;
+  margin: 1rem;
+}
+
+.verticalDivider{
+  height: auto;
+  margin-inline: 2rem;
+  border: 1px solid var(--accentColor3);
+
+}
+
+label {
+  font-family: var(--second-font);
+  font-size: 1rem;
+}
+
+.CheckoutNameDiv {
+  display:flex;
+  gap:1rem;
+  width: 100%;
+
+}
+
+.form-group {
+  margin-top: 1.5rem;
+}
+
+.checkoutBtn {
+  
+}
