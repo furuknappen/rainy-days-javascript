@@ -5,18 +5,18 @@ aside {
   width: 20rem;
 }
 
-.backBtn{
+/* .backBtn{
   display: flex;
   align-items: center;
   padding: 1rem;
   color: black;
   justify-self: start;
-}
-
+} */
+/* 
 .backBtn p{
   font-family: var(--main-font);
   font-size: 1.2rem;
-}
+} */
 
 .icon-tabler-arrow-left {
   height: 25px;
@@ -46,13 +46,13 @@ aside {
 
 /* .............. iPads (tablets) - Landscape ............ */
 @media (min-width: 768px)  {
-.backBtn{
+/* .backBtn{
   padding: 2rem;
-}
+} */
 
-.backBtn p{
+/* .backBtn p{
   font-size: 1.5rem;
-}
+} */
 
  .icon-tabler-arrow-left {
   height: 40px;

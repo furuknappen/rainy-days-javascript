@@ -128,15 +128,20 @@ hr{
 
 .cartpageBtn {
   margin-top: 8rem;
-  margin-inline: auto
+  margin-inline: auto;  font-family: var(--main-font);
+  font-size: 1.2rem;
 }
 
-.BackToBtn{
+/* .BackToBtn{
   position: absolute;
   bottom: 0px;
 
-
 }
+
+.BackToBtn p{
+    font-family: var(--main-font);
+  font-size: 1.2rem;
+}  */
 
 /* main > div {
   border: 1px solid red;

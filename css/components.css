@@ -1,0 +1,28 @@
+
+.backToBtnDiv {
+  /* border: 2px solid rgb(148, 75, 197);  */
+  /* justify-self: flex-start; */
+    /* color: black;*/
+  /* position: absolute; */
+  /* bottom: 0px; */
+  margin-block: 2rem;
+}
+
+.backBtn {
+  /* border: 2px solid rgb(0, 102, 255);  */
+  color: var(--accentColor1);
+  display: flex;
+  align-items: center;
+}
+
+
+.backBtn p{
+  font-family: var(--main-font);
+  font-size: 1.2rem;
+}
+
+.cartpageBtn {
+  margin-top: 8rem;
+  margin-inline: auto;  font-family: var(--main-font);
+  font-size: 1.2rem;
+}

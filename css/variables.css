@@ -16,3 +16,9 @@
   --accentColor5: #f5fbfd;
   --darkestColor: #051C22;
 }
+
+:root{
+  --borderRadius: 3px
+}
+
+/* var(--borderRadius) */

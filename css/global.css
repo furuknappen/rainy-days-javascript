@@ -52,7 +52,7 @@ input {
   font-size: 1rem;
   padding: 0.8rem;
   border: 2px solid var(--accentColor3);
-  border-radius: 3px;
+  border-radius: var(--borderRadius);
   width: 100%;
 }
 
@@ -71,7 +71,7 @@ input:focus {
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: var(--borderRadius);
 }
 
 .btn:hover {

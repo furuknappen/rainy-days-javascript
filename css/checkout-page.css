@@ -1,67 +1,66 @@
+.breadcrums{
+  font-family: var(--second-font);
+  margin-inline: 2rem;
+}
 
 .mainCheckoutPage{
-padding: 4rem;
-
-
-}
-.sectionContact{
-  display: flex;
-  flex-direction: column;
-
-
-}
-.sectionOrderSummary{
-  width: 30%;
+ padding: 4rem;
 
 }
 
-.miniCart {
-display:flex;
-align-items: center;
-justify-content: space-between;
+
+/* ---- Contactside ---- */
 
 
+.expressBtnDiv {
+  display:flex;
+  justify-content: space-evenly;
+  gap: 1rem;
 }
-.miniCart img{
-  height: 4rem;
-  width: 4rem;
+
+.expressText {
+  font-family: var(--second-font);
+  font-size: 1rem;
+  margin-bottom: 1rem
 
 }
 
 .expressBtn {
-  height: 3rem;
-  width: 3rem; 
+  padding: 0.5rem 2rem;
+  /* margin-inline: 1rem; */
+  border-radius: var(--borderRadius);
+  border:none;
+  width: 50%
 }
 
-.paypal{
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* or contain, depending on what you want */
-  object-position: center;
-  display: block;
+.paypal {
+  background-color: transparent;
+  border: 1px solid rgb(155, 154, 154);
 }
 
-/* .klarna{
-  clip-path: inset(10% 0 10% 0);
-} */
 
+.google{
+  background-color: rgb(27, 27, 27);
+}
 .dividerDiv {
   display: flex;
   align-items: center;
   width:100%;
-  font-family: var(--second-font)
+  font-family: var(--second-font);
+  margin-block: 1rem
 }
 
 .dividerDiv hr {
   width: 100%;
+}
+
+.dividerDiv p{
   margin: 1rem;
 }
 
-.verticalDivider{
-  height: auto;
-  margin-inline: 2rem;
-  border: 1px solid var(--accentColor3);
-
+.sectionContact{
+  display: flex;
+  flex-direction: column;
 }
 
 label {
@@ -81,5 +80,52 @@ label {
 }
 
 .checkoutBtn {
-  
+  width: auto;
+ margin-top: 5rem;
+ align-self:flex-end;
 }
+
+/* ---- divider ---- */
+.verticalDivider{
+  height: auto;
+  margin-inline: 2rem;
+  border: 1px solid var(--accentColor3);
+
+}
+
+/* ---- Summary Side ---- */
+.sectionOrderSummary{
+  width: 30%;
+}
+
+.sectionOrderSummary hr{
+  border: 1px solid var(--accentColor3);
+  margin-block: 1rem
+
+}
+
+.miniCart {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.miniCart img{
+  height: 4rem; 
+ width: 4rem; 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
