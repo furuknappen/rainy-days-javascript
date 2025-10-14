@@ -35,6 +35,46 @@
 </head>
 
 <body>
+      <header>
+    <a href="/index.html" aria-label="Rainy Days Home">
+      <img id="logo" src="/svg-img/img/rainyDaysLogoSmall.svg" alt="">
+    </a>
+
+
+    <nav class="navLinks" aria-label="Main Navigation">
+      <a class="navLink navHome" href="index.html" >Home</a>
+      <a class="navLink" href="shoppingpage.html">Woman</a>
+      <a class="navLink" href="shoppingpage.html">Men</a>
+      <a class="navLink" href="shoppingpage.html" aria-current="page">All products</a>
+    </nav>
+
+    <div id="headerSvgs">
+      <a href="/comingsoon-page.html" aria-label="Search">
+        <img class="headerSvg" src="/svg-img/svg/search.svg" alt="" aria-hidden="true">
+      </a>
+      <a href="/comingsoon-page.html" aria-label="Profile">
+        <img class="headerSvg" src="/svg-img/svg/profile-pic-circle.svg" alt="" aria-hidden="true">
+      </a>
+      <a href="/comingsoon-page.html" aria-label="Shopping bag">
+        <img class="headerSvg" src="/svg-img/svg/shopping-bag.svg" alt="" aria-hidden="true">
+      </a>
+    </div>
+
+    <!-- this is not accessibility friendly, source moodle -->
+    <div id="hamburgerBTN" aria-label="Open Menu">
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburgerIcon"><img id="hamburgerSvg" src="/svg-img/svg/hamburger-menu.svg"
+          alt="Hamburger menu"> </label>
+      <nav class="navLinks" aria-label="Main Navigation">
+        <a class="navLink navHome" href="index.html" >Home</a>
+        <a class="navLink" href="shoppingpage.html">Woman</a>
+        <a class="navLink" href="shoppingpage.html">Men</a>
+        <a class="navLink" href="shoppingpage.html"aria-current="page">All products</a>
+      </nav>
+    </div>
+
+  </header>
+  
   <main class="flexDiv">
     <section class="cartSummaryDiv">
       <h1 class="heading">Your Shoppingbag</h1>

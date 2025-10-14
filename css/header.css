@@ -1,13 +1,10 @@
 header {
   position: static;
   width: 100vw;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-inline: 1rem;
-
-  /* background-color: rgb(241, 214, 219); */
   height: 3.5rem;
   margin-top: -18px; /*dette er ikke et godt valg*/
   box-shadow: 0 1px 3px hsla(193, 53%, 35%, 0.12);
@@ -17,19 +14,24 @@ header {
   display: none;
   justify-content: space-evenly;
   flex: 1;
+  /* justify-self: center */
 }
 
 .navLink {
-
   text-decoration: transparent;
   font-family: var(--third-font);
   color: var(--mainColor);
   text-decoration-thickness: 2px;
   padding:1.5rem;
+  text-transform: uppercase;
+}
+
+.navlink[aria-current="page"] {
+  color: var(--accentColor1)
 }
 
 .navLink:hover {
-  color: #000000;
+
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }
@@ -98,7 +100,7 @@ header {
 
   .navLinks {
     max-width: 70rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     justify-self: center;
   }
 
@@ -116,5 +118,35 @@ header {
   }
 }
 
+.navMobLinks,
+#menu-checkbox {
+  display: none;
+  position: relative;
+}
 
+#menu-checkbox:checked ~ .navMobLinks {
+  display:block;
+}
+
+.navMobLinks{
+  position: absolute;
+  right: 0;
+  top: 56px;
+  background-color: var(--accentColor5);
+ padding-block:1rem
+}
+
+.navMob {
+  display:block;
+  padding-block: 0.4rem;
+  padding-left: 1rem;
+ padding-right: 3rem;
+ color: var(--mainColor);
+}
+
+
+
+.navMob:active {
+ background-color: var(--accentColor4);
+}
 

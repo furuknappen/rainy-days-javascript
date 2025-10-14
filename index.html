@@ -15,7 +15,7 @@
     rel="stylesheet">
   <link rel="icon" href="/assets/favicon-16x16.png" type="image/png">
 
-  
+
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -29,45 +29,60 @@
   <link rel="stylesheet" href="css/cart-page.css">
   <link rel="stylesheet" href="css/checkout-page.css">
   <link rel="stylesheet" href="css/components.css">
- 
+
 
   <title> Rainy Days | Home </title>
 </head>
 
 <body>
   <header>
-    <a href="/index.html">
-      <img id="logo" src="/svg-img/img/rainyDaysLogoSmall.svg" alt="Rainy Days Logo">
+    <a href="/index.html" aria-label="Rainy Days Home">
+      <img id="logo" src="/svg-img/img/rainyDaysLogoSmall.svg" alt="">
     </a>
 
 
-    <nav class="navLinks">
-      <a class="navLink" href="index.html">HOME</a>
-      <a class="navLink" href="shoppingpage.html">WOMEN</a>
-      <a class="navLink" href="shoppingpage.html">MEN</a>
-      <a class="navLink" href="shoppingpage.html">ALL</a>
+    <nav class="navLinks" aria-label="Main Navigation">
+      <a class="navLink navHome" href="index.html" aria-current="page">Home</a>
+      <a class="navLink" href="shoppingpage.html">Woman</a>
+      <a class="navLink" href="shoppingpage.html">Men</a>
+      <a class="navLink" href="shoppingpage.html">All products</a>
     </nav>
 
     <div id="headerSvgs">
-      <a href="/">
-        <img class="headerSvg" src="/svg-img/svg/search.svg" alt="_alternate text_"></button>
+      <a href="/comingsoon-page.html" aria-label="Search">
+        <img class="headerSvg" src="/svg-img/svg/search.svg" alt="" aria-hidden="true">
       </a>
-      <a href="/">
-        <img class="headerSvg" src="/svg-img/svg/profile-pic-circle.svg" alt="_alternate text_"></button>
+      <a href="/comingsoon-page.html" aria-label="Profile">
+        <img class="headerSvg" src="/svg-img/svg/profile-pic-circle.svg" alt="" aria-hidden="true">
       </a>
-      <a href="/">
-        <img class="headerSvg" src="/svg-img/svg/shopping-cart.svg" alt="_alternate text_"></button>
+      <a href="/comingsoon-page.html" aria-label="Shopping bag">
+        <img class="headerSvg" src="/svg-img/svg/shopping-bag.svg" alt="" aria-hidden="true">
       </a>
     </div>
 
-    <button id="hamburgerBTN" aria-label="Open Menu">
-      <img id="hamburgerSvg" src="/svg-img/svg/hamburger-menu.svg" alt="Hamburger menu">
-    </button>
+    <!-- this is not accessibility friendly, source moodle -->
+    <div id="hamburgerBTN" aria-label="Open Menu">
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburgerIcon"><img id="hamburgerSvg" src="/svg-img/svg/hamburger-menu.svg"
+          alt="Hamburger menu"> </label>
+      <nav class="navLinks" aria-label="Main Navigation">
+        <a class="navLink navHome" href="index.html" aria-current="page">Home</a>
+        <a class="navLink" href="shoppingpage.html">Woman</a>
+        <a class="navLink" href="shoppingpage.html">Men</a>
+        <a class="navLink" href="shoppingpage.html">All products</a>
+      </nav>
+    </div>
+
   </header>
+
+
+
+
+
+
 
   <main>
     <div class="genderPhotoDiv genderPhotoDivCouple">
-
 
       <div class="pictureDiv">
         <img class="genderPhoto" src="svg-img/img/tinified/woman-on-cliff.png"
@@ -91,47 +106,47 @@
           <button class="genderBtn" type="button"> <a href="#"> MEN </a></button>
         </div>
       </div>
-    <!-- </div>  -->
+      <!-- </div>  -->
     </div>
-  <div class="bestsellerDiv">
-    <a class="BestsellerLink" href="/shoppingpage.html">
-      <h1 class="headingMainpage">Our Bestsellers</h1>
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-        stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-        <path d="M5 12l14 0" />
-        <path d="M13 18l6 -6" />
-        <path d="M13 6l6 6" />
-      </svg>
-    </a>
-    <div class="" id="gridContainerHomepage">
-      <div class="card">
-        <img class="cardImg" src="/svg-img/img/jackets img/Vector.png" alt="Mossbrown colored inner Fleece Jacket">
-        <div class="cardTextDiv">
-          <p class="itemName">Patagonia Fleece Men</p>
-          <p class="itemPrice"> 899,00 kr </p>
-          <div style="background-color: #6D6244 ;" class="colorCircle"></div>
+    <div class="bestsellerDiv">
+      <a class="BestsellerLink" href="/shoppingpage.html">
+        <h1 class="headingMainpage">Our Bestsellers</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M5 12l14 0" />
+          <path d="M13 18l6 -6" />
+          <path d="M13 6l6 6" />
+        </svg>
+      </a>
+      <div class="" id="gridContainerHomepage">
+        <div class="card">
+          <img class="cardImg" src="/svg-img/img/jackets img/Vector.png" alt="Mossbrown colored inner Fleece Jacket">
+          <div class="cardTextDiv">
+            <p class="itemName">Patagonia Fleece Men</p>
+            <p class="itemPrice"> 899,00 kr </p>
+            <div style="background-color: #6D6244 ;" class="colorCircle"></div>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <img class="cardImg" src="/svg-img/img/jackets img/Vector-3.png" alt="metalic black shell jacket">
-        <div class="cardTextDiv">
-          <p class="itemName">Shell Jacket Women</p>
-          <p class="itemPrice"> 1299,00 kr </p>
-          <div class="colorCircle" style="background-color: #2E2E2E ;"></div>
+        <div class="card">
+          <img class="cardImg" src="/svg-img/img/jackets img/Vector-3.png" alt="metalic black shell jacket">
+          <div class="cardTextDiv">
+            <p class="itemName">Shell Jacket Women</p>
+            <p class="itemPrice"> 1299,00 kr </p>
+            <div class="colorCircle" style="background-color: #2E2E2E ;"></div>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <img class="cardImg" src="/svg-img/img/jackets img/Vector-1.png" alt="">
-        <div class="cardTextDiv">
-          <p class="itemName">Scott Gore-tex Men</p>
-          <p class="itemPrice"> 1899,00 kr </p>
-          <div class="colorCircle" style="background-color: #3F3F3F ;"></div>
+        <div class="card">
+          <img class="cardImg" src="/svg-img/img/jackets img/Vector-1.png" alt="">
+          <div class="cardTextDiv">
+            <p class="itemName">Scott Gore-tex Men</p>
+            <p class="itemPrice"> 1899,00 kr </p>
+            <div class="colorCircle" style="background-color: #3F3F3F ;"></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
   </main>
 
@@ -191,4 +206,5 @@
 
   </footer>
 </body>
+
 </html>
