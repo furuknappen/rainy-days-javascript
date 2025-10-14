@@ -21,3 +21,50 @@
   font-size: 1rem;
 }
 
+.navBreadCrumbs {
+  margin: 1rem
+}
+
+
+.breadcrumbs a{
+  font-family: var(--second-font);
+ /* margin-block: 1rem; */
+ color: gray;
+ /* margin: 2rem */ 
+
+}
+
+.breadcrumbs{
+  list-style:none;
+  display:flex;
+  gap:0.2rem
+}
+
+.breadcrumbs li + li::before {
+  content: ">";
+  margin: 0.2rem;
+  /* text-decoration: none; */
+  font-family: var(--second-font);
+  color: gray;
+}
+
+.breadcrumbs li:last-child::after {
+  content: "";
+  margin-left: 0.5rem;
+
+}
+
+
+
+/* .............. iPads (tablets) - Landscape ............ */
+@media (min-width: 768px)  {
+.breadcrumbs{
+  gap:0.5rem
+}
+
+.breadcrumbs li + li::before {
+  margin: 0.5rem;
+}
+
+
+}
