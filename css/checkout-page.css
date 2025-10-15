@@ -3,6 +3,7 @@
   display: flex;
   align-items: top;
   flex-direction: column-reverse;
+  margin-bottom: 3rem
 }
 
 /* ---- Contactside ---- */
@@ -139,6 +140,7 @@ label {
     align-items: flex-start;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 5rem;
   } 
 
   .expressBtnDiv {

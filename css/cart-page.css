@@ -3,6 +3,7 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  margin-bottom: 3rem
 }
 
 
@@ -229,9 +230,7 @@ hr{
   }
 
   .flexDiv {
-    /* display: flex;
-    flex-direction: row; */
-    
+   margin-bottom: 9rem;
   }
 
   .orderSummaryDiv {

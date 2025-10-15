@@ -1,35 +1,30 @@
-
-
 footer {
   background-color: var(--mainColor);
   font-family: var(--main-font);
   color: var(--accentColor3);
-
 }
 
 .flexDivFooter {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  /* padding: 9vw 15vw; */
-  padding-inline: clamp(15%, 12%, 8rem );
-  /* padding-inline: 10%; */
+  padding-inline: clamp(10%, 12%, 8rem);
   padding-block: 9vw;
- 
 }
 
-footer li {
-  line-height: 50px;
+footer nav {
+  line-height: 4rem;
   display: none;
 }
-footer ul{
-  margin: 1rem;
+
+footer ul {
   text-wrap: nowrap;
-  
 }
 
 footer a {
   text-decoration: none;
+  color: var(--accentColor3);
+  font-size: 1rem;
 }
 
 footer li:hover {
@@ -37,15 +32,17 @@ footer li:hover {
   text-underline-offset: 3px;
 }
 
-footer ul li:first-child {
+footer h3 {
   text-decoration: underline;
   text-underline-offset: 5px;
   color: white;
+  font-weight: normal;
+  margin-bottom: 1rem;
 }
 
-.logoAndSosials {
+.logoAndSocials {
   margin-top: 30px;
-
+  margin-inline: 1rem;
 }
 
 footer .logo {
@@ -54,11 +51,17 @@ footer .logo {
   display: block;
 }
 
-.sosials {
+.socials {
   display: flex;
   justify-content: space-between;
-  height: 2.5rem;
+  flex-direction: row;
+  list-style: none;
+  height: 3rem;
   margin-top: 4rem;
+}
+
+.socials img {
+  height: 40px;
 }
 
 footer p {
@@ -70,22 +73,27 @@ footer p {
   display: block;
   text-decoration: underline;
   justify-self: center;
-  /* line-height: 4rem; */
   padding-block: 10vw;
+  text-underline-offset: 5px;
+  text-transform: uppercase;
 }
 
 /* .............. iPads (tablets) - Landscape ............ */
-@media (min-width: 769px) /*and (max-width: 1024px) */ {
-
-  .flexDivFooter {
-      flex-direction: row;
+@media (min-width: 769px) {
+  footer nav {
+    line-height: 4rem;
+    display: block;
   }
 
-  footer li{
+  .flexDivFooter {
+    flex-direction: row;
+  }
+
+  footer li {
     display: flex;
   }
 
   .mobileLinks {
-  display: none;
-}
+    display: none;
+  }
 }
