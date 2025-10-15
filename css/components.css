@@ -13,6 +13,7 @@
   color: var(--accentColor1);
   display: flex;
   align-items: center;
+  margin: 2rem;
 }
 
 .backBtn:active {
@@ -21,9 +22,12 @@
 
 .backBtn span{
   font-family: var(--main-font);
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
-
+.icon-tabler-arrow-left {
+  height: 25px;
+  width: 25px
+}
 
 /* -------- breadcrumbs -------- */
 .navBreadCrumbs {
