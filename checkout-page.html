@@ -75,29 +75,31 @@
     </div>
 
   </header>
-  
-   <nav class="navBreadCrumbs" aria-label="Breadcrumb">
-      <ol class="breadcrumbs">
-        <li><a href="/cart-page.html"> Cart </a></li> 
-        <li><a aria-current="page"> Checkout </a></li> 
-        <li><a href="/comingsoon-page.html"> Shipping </a></li> 
-        <li><a href="/comingsoon-page.html">Payment</a></li>
-      </ol>
-   </nav>
+
+  <nav class="navBreadCrumbs" aria-label="Breadcrumb">
+    <ol class="breadcrumbs">
+      <li><a href="/cart-page.html">Cart</a></li>
+      <li><a aria-current="page">Checkout</a></li>
+      <li><a href="/comingsoon-page.html">Shipping</a></li>
+      <li><a href="/comingsoon-page.html">Payment</a></li>
+    </ol>
+  </nav>
 
   <main Class="mainCheckoutPage flexDiv">
 
     <section class="sectionContact">
       <div>
-        <h2 class="expressText">Express Checkout</h2>
+        <h1 class="expressText">Express Checkout</h1>
         <div class="expressBtnDiv">
-          <button class="expressBtn paypal">
-            <img src="/svg-img/svg/sosials/paypal.png">
-          </button>
+          <a class="expressBtn paypal" href="https://www.paypal.com/no/home" target="_blank"
+            aria-label="Pay with Paypal" role="button" aria-describedby="Opens in a new tab" rel="noopener">
+            <img src="/svg-img/svg/sosials/paypal.png" alt="Paypal Logo">
+          </a>
 
-          <button class="expressBtn google">
-            <img src="/svg-img/svg/sosials/googlepay.png">
-          </button>
+          <a class="expressBtn google" href="https://pay.google.com/intl/no_no/about/" target="_blank"
+            aria-label="Pay with Paypal" role="button" aria-describedby="Opens in a new tab" rel="noopener">
+            <img src="/svg-img/svg/sosials/googlepay.png" alt="Google Pay Logo">
+          </a>
         </div>
       </div>
 
@@ -112,48 +114,84 @@
         <h1>Contact</h1>
 
         <label for="email"> Email Address</label><br>
-        <input tupe="email id=email" name="email">
+        <input tupe="email id=email" name="email" placeholder="email@example.com" pattern="@" aria-required="true">
 
-        <h1> Shipping Address</h1>
+        <h1 class="h1SpaceOver"> Shipping Address</h1>
 
         <div class="checkoutNameDiv">
           <div class="form-group">
             <label for="fname"> First Name</label><br>
-            <input type="fname" id="fname" name="fname"><br>
+            <input 
+            type="fname" 
+            id="fname" 
+            name="fname" 
+            aria-required="true"
+            autocomplete="given-name"
+            placeholder="Enter first name"><br>
           </div>
 
           <div class="form-group">
             <label for="lname"> Last Name</label><br>
-            <input type="lname" id="lname" name="lname"><br>
+            <input 
+            type="text" 
+            id="lname" 
+            name="lname" 
+            aria-required="true"
+            placeholder="Enter Last Name"
+            autocomplete="family-name"><br>
           </div>
         </div>
 
         <div class="form-group">
           <label for="address"> Address</label><br>
-          <input type="address" id="address" name="address"><br>
+          <input 
+          type="text" 
+          id="address" 
+          name="address" 
+          aria-required="true" 
+            placeholder="Enter address"
+          autocomplete="street-address"><br>
         </div>
 
         <div class="form-group">
           <label for="postal"> Postal Number</label><br>
-          <input type="postal" id="postal" name="postal"> <br>
+          <input 
+          type="text" 
+          id="postal" 
+          name="postal" 
+          aria-required="true"
+            placeholder="Enter postal code"
+          autocomplete="postal-code"> <br>
         </div>
 
         <div class="form-group">
           <label for="country"> Country</label><br>
-          <input type="country" id="country" name="country"><br>
+          <input 
+          type="text" 
+          id="country" 
+          name="country" 
+          aria-required="true"
+          placeholder="Enter country"
+          autocomplete="country-name"><br>
         </div>
 
         <div class="form-group">
           <label for="phone"> Phone Number</label><br>
-          <input type="phone" id="phone" name="phone"><br>
+          <input 
+          type="text" 
+          id="phone" 
+          name="phone" 
+          aria-required="true" 
+          placeholder="xx xx xx xx"
+          autocomplete="tel"><br>
         </div>
       </section>
 
       <div class="bottomButtons">
-      
+
 
         <div class="backToBtnDivCheckout">
-          <a class="backBtn" href="/shoppingpage.html">
+          <a class="backBtn" href="/cart-page.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
               class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left">
@@ -166,7 +204,8 @@
               Back to Cart
             </p>
           </a>
-        </div>  <button href="" class="btn checkoutBtn"> Continue</button>
+        </div>
+        <a href="/" class="btn checkoutBtn"> Continue</a>
       </div>
     </section>
 
@@ -174,7 +213,7 @@
 
     <section class="sectionOrderSummary">
 
-      <h2> Order Summary</h2>
+      <h1> Order Summary</h1>
 
       <div class="miniCart">
         <img src="/svg-img/img/jackets img/Vector.png">
@@ -194,7 +233,6 @@
         <p class="orderInfo"> FREE </p>
       </div>
 
-
       <hr>
       <div class="flexBetween totalDiv">
 
@@ -202,9 +240,11 @@
         <p class="orderInfo"> 899,00 kr</p>
       </div>
 
-
     </section>
   </main>
+
+
+  
 </body>
 
 </html>

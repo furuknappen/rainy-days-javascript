@@ -81,5 +81,5 @@ input:focus {
 .btn:active {
   background-color: var(--darkestColor);
   color: white;
+    transform: translateY(2px);
 }
-
