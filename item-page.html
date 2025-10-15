@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="css/aside.css">
   <link rel="stylesheet" href="css/item-page.css">
   <link rel="stylesheet" href="css/cart-page.css">
-  <link rel="stylesheet" href="css/components.css">  
+  <link rel="stylesheet" href="css/components.css">
 
 
 
@@ -36,14 +36,14 @@
 </head>
 
 <body>
-      <header>
+  <header>
     <a href="/index.html" aria-label="Rainy Days Home">
       <img id="logo" src="/svg-img/img/rainyDaysLogoSmall.svg" alt="">
     </a>
 
 
     <nav class="navLinks" aria-label="Main Navigation">
-      <a class="navLink navHome" href="index.html" >Home</a>
+      <a class="navLink navHome" href="index.html">Home</a>
       <a class="navLink" href="shoppingpage.html">Woman</a>
       <a class="navLink" href="shoppingpage.html">Men</a>
       <a class="navLink" href="shoppingpage.html" aria-current="page">All products</a>
@@ -67,59 +67,61 @@
       <label for="menu-checkbox" class="hamburgerIcon"><img id="hamburgerSvg" src="/svg-img/svg/hamburger-menu.svg"
           alt="Hamburger menu"> </label>
       <nav class="navLinks" aria-label="Main Navigation">
-        <a class="navLink navHome" href="index.html" >Home</a>
+        <a class="navLink navHome" href="index.html">Home</a>
         <a class="navLink" href="shoppingpage.html">Woman</a>
         <a class="navLink" href="shoppingpage.html">Men</a>
-        <a class="navLink" href="shoppingpage.html"aria-current="page">All products</a>
+        <a class="navLink" href="shoppingpage.html" aria-current="page">All products</a>
       </nav>
     </div>
 
   </header>
-  <main class="flexDiv">
+
+  <a class="backBtn backBtnItemPage" href="/shoppingpage.html"> <svg aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M5 12l14 0" />
+      <path d="M5 12l6 6" />
+      <path d="M5 12l6 -6" />
+    </svg>
+    <span>
+      Back
+    </span>
+  </a>
+
+  <main class="flexDivItemPage">
     <div>
-      <a class="backBtn" href="/index.html"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-          stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M5 12l14 0" />
-          <path d="M5 12l6 6" />
-          <path d="M5 12l6 -6" />
-        </svg>
-        <p>
-          Back
-        </p>
-      </a>
-      <img class="itemImage" src="/svg-img/img/jackets img/Vector.png">
+      <img class="itemImage" src="/svg-img/img/jackets img/Vector.png" alt="Patagonia Fleece Jacket for men">
     </div>
     <div class="textSide">
       <h1 class="h1Itemname"> Patagonia Fleece Men</h1>
       <p class="price">899,00 kr</p>
-      <p class="infoText" >Patagonia fleece is a soft and comfortable jacket, perfect for both hiking and daily use!</p>
+      <p class="infoText">Patagonia fleece is a soft and comfortable jacket, perfect for both hiking and daily use!</p>
 
-      <div style="background-color: #6D6244 ;" class="colorCircle"></div>
+      <div class="colorCircle" style="background-color: #6D6244;" role="img" aria-label="Color: dark beige"></div>
+
       <div class="buttonDiv">
-        <button Class="sizeBtn"> S </button>
-        <button Class="sizeBtn"> M </button>
-        <button Class="sizeBtn"> L </button>
+        <button class="sizeBtn" aria-label="Select size Small"> S </button>
+        <button class="sizeBtn" aria-label="Select size Medium"> M </button>
+        <button class="sizeBtn" aria-label="Select size Large"> L </button>
       </div>
 
-      <button class="btn itempageBtn"> Add to shoppingbag</button>
+      <a class="btn itempageBtn" href="cart-page.html"> Add to shoppingbag</a>
     </div>
-
-
   </main>
   <footer>
 
     <div class="flexDivFooter">
       <div class="logoAndSocials">
         <a href="/" aria-label="Rainy Days Home">
-          <img class="logo" src="/svg-img/img/RainyDaysLogoLight.svg" alt="" >
+          <img class="logo" src="/svg-img/img/RainyDaysLogoLight.svg" alt="">
         </a>
 
         <a class="mobileLinks" href="/comingsoon-page.html"> Help & Information </a>
         <a class="mobileLinks" href="/comingsoon-page.html"> About Rainy Days </a>
 
-        <div  aria-label="Follow Rainy Days on social media">
+        <div aria-label="Follow Rainy Days on social media">
           <ul class="socials">
             <li>
               <a href="https://youtube.com/" aria-label=" Rainy Days on Youtube">
@@ -133,12 +135,12 @@
             </li>
             <li>
               <a href="https://instagram.com/" aria-label=" Rainy Days on X (formally twitter)">
-              <img src="/svg-img/svg/sosials/instagram.svg" alt="" aria-hidden="true">
+                <img src="/svg-img/svg/sosials/instagram.svg" alt="" aria-hidden="true">
               </a>
             </li>
             <li>
               <a href="https://facebook.com/" aria-label=" Rainy Days on X (formally twitter)">
-           <img src="/svg-img/svg/sosials/facebook.svg" alt="" aria-hidden="true">
+                <img src="/svg-img/svg/sosials/facebook.svg" alt="" aria-hidden="true">
               </a>
             </li>
           </ul>

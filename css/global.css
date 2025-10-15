@@ -72,14 +72,21 @@ input:focus {
   border: none;
   cursor: pointer;
   border-radius: var(--borderRadius);
+   text-decoration: none;
 }
 
 .btn:hover {
   background-color: var(--logoColor);
+    text-decoration: none;
 }
 
 .btn:active {
   background-color: var(--darkestColor);
   color: white;
     transform: translateY(2px);
+    text-decoration: none;
+}
+
+.btn::after{
+    text-decoration: none;
 }

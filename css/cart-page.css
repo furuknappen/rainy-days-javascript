@@ -229,9 +229,7 @@ hr{
     
   }
 
-  .flexDiv {
-   margin-bottom: 9rem;
-  }
+
 
   .orderSummaryDiv {
     border: 1px solid var(--accentColor3);
@@ -247,7 +245,8 @@ hr{
     flex-direction: row;
     /* border: 1px solid red; */
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+    margin-bottom: 9rem;
   }
 
   .backToBtnDiv{

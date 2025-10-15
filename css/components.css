@@ -19,7 +19,7 @@
   transform: translateY(2px);
 }
 
-.backBtn p{
+.backBtn span{
   font-family: var(--main-font);
   font-size: 1rem;
 }
@@ -33,9 +33,7 @@
 
 .breadcrumbs a{
   font-family: var(--second-font);
- /* margin-block: 1rem; */
  color: gray;
- /* margin: 2rem */ 
 }
 
 .breadcrumbs a:hover{

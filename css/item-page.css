@@ -1,45 +1,46 @@
-/* .flexDiv { */
-  /* display: flex;
-  justify-content: center; */
-  /* border: 1px solid red; */
-  /* flex-direction: column; */
+.flexDivItemPage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
 
-/* } */
+.backBtnItemPage {
+  position: relative;
+  padding: 2rem;
+}
 
-.itemImage{
-  width: 50rem;
+.itemImage {
+  width: 100%;
 }
 
 .textSide {
- padding-block: 5rem
+  padding-block: 5rem;
 }
-
-
 
 .h1Itemname {
   font-family: var(--main-font);
   padding-inline: 0px;
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .price {
- font-family: var(--second-font);
- font-size: 2rem;
- padding-bottom: 2rem;
-
-
+  font-family: var(--second-font);
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 .infoText {
- font-family: var(--second-font);
-  font-size: 2rem;
-  margin-block: 2rem;
-  width: 30rem
+  font-family: var(--second-font);
+  font-size: 1.3rem;
+  margin-block: 1.5rem;
 }
 
-.sizeBtn{
-  padding-inline: 0.5em;
-  padding-block: 0.3em;
+.sizeBtn {
+  width: 40px;
+  height: 40px;
   background-color: white;
   border-color: var(--accentColor2);
   border-radius: 3px;
@@ -49,10 +50,32 @@
 }
 
 .buttonDiv {
-   margin-block: 2rem;
+  margin-block: 2rem;
 }
-.itempageBtn{
-  font-size: 2rem;
+.itempageBtn {
+  font-size: 1.3rem;
+  display: inline-block;
+  text-decoration: none;
 }
 
+/* .............. iPads (tablets) - Landscape ............ */
+@media (min-width: 768px) {
+  .infoText {
+    font-size: 1.5rem;
+    margin-block: 2rem;
+    width: 30rem;
+  }
 
+  .itemImage {
+    padding-inline: 4rem;
+  }
+  .textSide {
+    padding-block: 0rem;
+  }
+
+  .flexDivItemPage {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 9rem;
+  }
+}
