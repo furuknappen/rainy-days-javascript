@@ -61,6 +61,8 @@
   height: auto;
   width: 100%;
 }
+
+
 /* ------------- cards on mainpage ------------ */
 .card:last-child {
   display: none;
@@ -78,16 +80,14 @@
   margin-top: 1rem;
 }
 
-.cardHeading {
-  padding-right: 0.3rem;
-  padding-left: 1%;
-}
-.BestsellerLink {
+
+.bestsellerLink {
   display: flex;
   align-items: center;
   padding: 1rem;
   color: black;
-
+  font-family: var(--second-font);
+  font-size: 1.5rem;
   justify-self: start;
 }
 
@@ -107,7 +107,7 @@
 }
 
 /* .............. iPads (tablets) - Landscape ............ */
-@media (min-width: 769px) /*and (max-width: 1024px) */ {
+@media (min-width: 769px) {
   .genderPhotoDivSingle {
     display: none;
   }
@@ -132,7 +132,7 @@
     display: none;
   }
 
-  .cardHeading {
+  .headingMainpage {
     margin-left: 0%;
   }
   #gridContainerHomepage {
@@ -159,9 +159,8 @@
     display: flex;
   }
 
-  .cardHeading {
-    padding-right: 0.3rem;
+
+   .bestsellerLink{
     font-size: 2rem;
-    
-  }
+   }
 }

@@ -8,9 +8,9 @@ a {
   /* color:black; */
   text-decoration: none;
 }
-a:focus {
+/* a:focus {
   border: 2px solid var(--accentColor3);
-}
+} */
 
 a:hover {
   text-decoration: underline;
@@ -43,7 +43,7 @@ li {
 h1 {
   font-family: "Open sans";
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 h2 {

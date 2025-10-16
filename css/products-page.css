@@ -23,7 +23,6 @@
 }
 
 aside {
-
   left: 0px;
   width: 20rem;
 }
@@ -69,16 +68,13 @@ aside {
 .categoryList{
    display: block;
 }
-}
-
-
-
-/* .............. iPads (tablets) - Landscape ............ */
-@media (min-width: 769px) /*and (max-width: 1024px) */ {
   .gridContainer {
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     column-gap: 20px;
 
+  }
+  .backBtnItemPage{
+  
   }
 }
 

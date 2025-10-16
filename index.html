@@ -42,11 +42,12 @@
 
 
     <nav class="navLinks" aria-label="Main Navigation">
-      <a class="navLink navHome" href="index.html" aria-current="page">Home</a>
+      <a class="navLink" href="index.html" aria-current="page">Home</a>
       <a class="navLink" href="shoppingpage.html">Woman</a>
       <a class="navLink" href="shoppingpage.html">Men</a>
       <a class="navLink" href="shoppingpage.html">All products</a>
     </nav>
+
 
     <div id="headerSvgs">
       <a href="/comingsoon-page.html" aria-label="Search">
@@ -87,70 +88,74 @@
       <div class="pictureDiv">
         <img class="genderPhoto" src="svg-img/img/tinified/woman-on-cliff.png"
           alt="Hiking woman in a yellow rainjacket standing in a cliff">
-        <button class="genderBtn" type="button"> <a href="#"> WOMEN </a></button>
+        <a class="genderBtn" href="/comingsoon-page.html"> WOMEN </a>
       </div>
       <div class="pictureDiv">
         <img class="genderPhoto" src="svg-img/img/tinified/man-on-cliff.png"
           alt="Hiking man in a red jacket standing in a cliff">
 
-        <button class="genderBtn" type="button"> <a href="#"> MEN </a></button>
+        <a class="genderBtn" href="comingsoon-page.html"> MEN </a>
       </div>
     </div>
 
     <div class="genderPhotoDivSingle">
       <div class="pictureDiv">
-        <img class="genderPhotoSingle" src="svg-img/img/tinified/person-in raincoat-hiking.png"
+        <img class="genderPhotoSingle" src="svg-img/img/tinified/person-in-raincoat-hiking.png"
           alt="Hiking woman in a yellow rainjacket standing in a cliff">
         <div class="genderButtonsDiv">
-          <button class="genderBtn" type="button"> <a href="#"> WOMEN </a></button>
-          <button class="genderBtn" type="button"> <a href="#"> MEN </a></button>
+          <a class="genderBtn" href="/comingsoon-page.html"> WOMEN </a>
+          <a class="genderBtn" href="/comingsoon-page.html"> MEN </a>
         </div>
       </div>
-      <!-- </div>  -->
     </div>
-    <div class="bestsellerDiv">
-      <a class="BestsellerLink" href="/shoppingpage.html">
-        <h1 class="headingMainpage">Our Bestsellers</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-          class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M5 12l14 0" />
-          <path d="M13 18l6 -6" />
-          <path d="M13 6l6 6" />
-        </svg>
-      </a>
-      <div class="" id="gridContainerHomepage">
-        <div class="card">
-          <img class="cardImg" src="/svg-img/img/jackets img/Vector.png" alt="Mossbrown colored inner Fleece Jacket">
+
+    <div class="bestsellerDiv" aria-labelledby="bestsellers-title">
+      <h1><a class="bestsellerLink headingMainpage" href="/shoppingpage.html" id="bestsellers-title">Our Bestsellers
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="40" height="40" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M5 12l14 0" />
+            <path d="M13 18l6 -6" />
+            <path d="M13 6l6 6" />
+          </svg>
+        </a></h1>
+        
+      <div class="" id="gridContainerHomepage" role="list">
+        <a href="/item-page.html" role="listitem" class="card" aria-labelledby="patagonia-title1">
+          <img class="cardImg" src="/svg-img/img/jackets-img/Vector.png" alt="Mossbrown colored inner Fleece Jacket">
           <div class="cardTextDiv">
-            <p class="itemName">Patagonia Fleece Men</p>
+            <p class="itemName" id="patagonia-title1">Patagonia Fleece Men</p>
             <p class="itemPrice"> 899,00 kr </p>
-            <div style="background-color: #6D6244 ;" class="colorCircle"></div>
+            <span class="visually-hidden">Color: Mossbrown </span>
+            <div style="background-color: #6D6244;" aria-hidden="true" class="colorCircle"></div>
           </div>
-        </div>
-        <div class="card">
-          <img class="cardImg" src="/svg-img/img/jackets img/Vector-3.png" alt="metalic black shell jacket">
+        </a>
+        <a class="card" href="/comingsoon-page.html" role="listitem" aria-labelledby="shell-jacket-woman-title1">
+          <img class="cardImg" src="/svg-img/img/jackets-img/Vector-3.png" alt="metalic black shell jacket">
           <div class="cardTextDiv">
-            <p class="itemName">Shell Jacket Women</p>
+            <p id="shell-jacket-woman-title1" class="itemName">Shell Jacket Women</p>
             <p class="itemPrice"> 1299,00 kr </p>
-            <div class="colorCircle" style="background-color: #2E2E2E ;"></div>
+            <span class="visually-hidden">Color: silver black </span>
+            <div class="colorCircle" style="background-color: #2E2E2E ;" aria-hidden="true"></div>
           </div>
-        </div>
-        <div class="card">
-          <img class="cardImg" src="/svg-img/img/jackets img/Vector-1.png" alt="">
+        </a>
+        <a class="card" href="/comingsoon-page.html" role="listitem" aria-labelledby="scott-goretex-title1">
+          <img class="cardImg" src="/svg-img/img/jackets-img/Vector-1.png" alt="gray and black Scott gore-tex jacket">
           <div class="cardTextDiv">
-            <p class="itemName">Scott Gore-tex Men</p>
+            <p id="scott-goretex-title1" class="itemName">Scott Gore-tex Men</p>
             <p class="itemPrice"> 1899,00 kr </p>
-            <div class="colorCircle" style="background-color: #3F3F3F ;"></div>
+            <span class="visually-hidden">Color: black and gray </span>
+            <div class="colorCircle" style="background-color: #3F3F3F ;" aria-hidden="true"></div>
           </div>
-        </div>
+        </a>
       </div>
+    </div>
     </div>
 
   </main>
 
-  <div class="memberDiv">
+  <div class="memberDiv" aria-label="Become a member of Rainy Days">
     <h1>
       50% Off? <br> Become A Member!
     </h1>
@@ -158,8 +163,9 @@
       Become a member to get 50% off your next purchase and get in on exclusive deals!
     </p>
     <form class="memberForm" action="/#" method="post">
-      <!-- <label for="email">Email</label> -->
-      <input class="memberInput" type="email" name="email" placeholder="Email" required>
+      <label for="emailMember" class="visually-hidden"> Write email here to become a member of the Rainy Days
+        Club</label>
+      <input id="emailMember" class="memberInput" type="email" name="email" placeholder="Email" required>
       <button type="submit" class="btn signUpButton"> SIGN ME UP</button>
     </form>
   </div>
@@ -170,13 +176,13 @@
     <div class="flexDivFooter">
       <div class="logoAndSocials">
         <a href="/" aria-label="Rainy Days Home">
-          <img class="logo" src="/svg-img/img/RainyDaysLogoLight.svg" alt="" >
+          <img class="logo" src="/svg-img/img/RainyDaysLogoLight.svg" alt="">
         </a>
 
         <a class="mobileLinks" href="/comingsoon-page.html"> Help & Information </a>
         <a class="mobileLinks" href="/comingsoon-page.html"> About Rainy Days </a>
 
-        <div  aria-label="Follow Rainy Days on social media">
+        <div aria-label="Follow Rainy Days on social media">
           <ul class="socials">
             <li>
               <a href="https://youtube.com/" aria-label=" Rainy Days on Youtube">
@@ -190,12 +196,12 @@
             </li>
             <li>
               <a href="https://instagram.com/" aria-label=" Rainy Days on X (formally twitter)">
-              <img src="/svg-img/svg/sosials/instagram.svg" alt="" aria-hidden="true">
+                <img src="/svg-img/svg/sosials/instagram.svg" alt="" aria-hidden="true">
               </a>
             </li>
             <li>
               <a href="https://facebook.com/" aria-label=" Rainy Days on X (formally twitter)">
-           <img src="/svg-img/svg/sosials/facebook.svg" alt="" aria-hidden="true">
+                <img src="/svg-img/svg/sosials/facebook.svg" alt="" aria-hidden="true">
               </a>
             </li>
           </ul>

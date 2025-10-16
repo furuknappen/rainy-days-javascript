@@ -1,24 +1,13 @@
-/* .gridContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 10px;
-  row-gap: 20px;
-  margin-inline: auto;
-  width: 90%;
-  text-wrap: wrap;
-
-} */
 
 .card {
-  /* background-color: aquamarine; */
+
   border: 1px solid #aca8a8;
   display: flex;
   flex-direction: column;
   border-radius: 3px;
   width: 100%;
-  /* font-family: 1rem; */
-   /* align-items:space-between; */
-   /* justify-content:stretch; */
+
+   color:black;
 }
 
 .cardImg {
@@ -41,11 +30,11 @@
 }
 
 .itemName {
-  /* padding-bottom: 2rem; */
+
   font-size: clamp(1rem, 2vw, 2.5rem);
   font-family: var(--main-font);
   font-weight: 400;
-  /* height: 3rem; */  
+ 
 }
 
 .itemPrice {
@@ -68,27 +57,24 @@
 
 /*............ Desktops ................*/
 @media (min-width: 1025px) {
-
-
-
  .card{
   max-width: 300px;}
 
-.itemName {  
+  .itemName {  
   font-size: clamp(1rem, 1.5vw, 2rem);
 
  }
 
  .itemPrice {
   font-size: clamp(1rem, 1.5vw, 2rem);
-}
+ }
 
-.colorCircle {
-  background-color: rgb(0, 0, 0);
-  width: 25px;
-  height: 25px;
-  border-radius: 50px;
-  margin-top: 1.2em;
-}
+  .colorCircle {
+    background-color: rgb(0, 0, 0);
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    margin-top: 1.2em;
+  }
 
 }
