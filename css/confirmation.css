@@ -1,37 +1,66 @@
-.conformationMain{
-  display:flex;
+.confirmationMain {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   font-family: var(--third-font);
   padding-top: 1rem;
-  padding-bottom: 5rem
+  padding-bottom: 5rem;
 }
 
-.icon-tabler-check{
-  width: 15rem;
-  height: 15rem;
-  color: var(--conformation)
+.checkmark {
+  width: 7rem;
+  height: 7rem;
+  color: var(--conformation);
+  margin-block: 3rem
 }
 
-.conformationHeading{
+.confirmationHeading {
   color: var(--conformationText);
   font-family: var(--second-font);
-  padding-bottom: 5rem;
-  font-size: 2.5rem;
+  padding-bottom: 3rem;
+  font-size: 1.5rem;
 }
 
-.conformationInfo {
+.confirmationInfo {
   font-size: 1.2rem;
-  width:30rem;
+  width: 20rem;
   text-align: center;
-  padding-bottom: 2rem
-
+  padding-bottom: 1rem;
 }
 
 .orderNumber {
-  font-size: 2rem;
-  padding:2rem;
-  padding-bottom: 8rem;
+  font-size: 1.2rem;
+  padding: 1rem;
+  padding-bottom: 4rem;
+}
+
+/* .............. iPads (tablets) - Landscape ............ */
+@media (min-width: 768px) {
+  .confirmationMain {
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+  }
+
+  .icon-tabler-check {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .confirmationHeading {
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .confirmationInfo {
+    width: 30rem;
+    padding-bottom: 1rem;
+  }
+
+  .orderNumber {
+    font-size: 1.5rem;
+    padding: 1rem;
+    padding-bottom: 5rem;
+  }
 }
