@@ -91,13 +91,14 @@
       <div>
         <h1 class="expressText">Express Checkout</h1>
         <div class="expressBtnDiv">
+          <span id="new-tab-note" class="visually-hidden"> (Opens in a new tab)</span>
           <a class="expressBtn paypal" href="https://www.paypal.com/no/home" target="_blank"
-            aria-label="Pay with Paypal" role="button" aria-describedby="Opens in a new tab" rel="noopener">
+            aria-label="Pay with Paypal"  aria-describedby="new-tab-note" rel="noopener">
             <img src="/svg-img/svg/sosials/paypal.png" alt="Paypal Logo">
           </a>
 
-          <a class="expressBtn google" href="https://pay.google.com/intl/no_no/about/" target="_blank"
-            aria-label="Pay with Paypal" role="button" aria-describedby="Opens in a new tab" rel="noopener">
+          <a class="expressBtn google" href="https://pay.google.com/intl/no_no/about/" aria-describedby="new-tab-note" target="_blank"
+            aria-label="Pay with Google Pay"  rel="noopener">
             <img src="/svg-img/svg/sosials/googlepay.png" alt="Google Pay Logo">
           </a>
         </div>
@@ -105,16 +106,16 @@
 
 
       <div class="dividerDiv ">
-        <hr>
+        <hr aria-hidden="true">
         <p>OR</p>
-        <hr>
+        <hr aria-hidden="true">
       </div>
 
       <section>
         <h1>Contact</h1>
 
         <label for="email"> Email Address</label><br>
-        <input tupe="email id=email" name="email" placeholder="email@example.com" pattern="@" aria-required="true">
+        <input type="email" id="email" name="email" placeholder="email@example.com" pattern="@" required>
 
         <h1 class="h1SpaceOver"> Shipping Address</h1>
 
@@ -122,10 +123,10 @@
           <div class="form-group">
             <label for="fname"> First Name</label><br>
             <input 
-            type="fname" 
+            type="text" 
             id="fname" 
             name="fname" 
-            aria-required="true"
+            required
             autocomplete="given-name"
             placeholder="Enter first name"><br>
           </div>
@@ -136,7 +137,7 @@
             type="text" 
             id="lname" 
             name="lname" 
-            aria-required="true"
+            required
             placeholder="Enter Last Name"
             autocomplete="family-name"><br>
           </div>
@@ -148,7 +149,7 @@
           type="text" 
           id="address" 
           name="address" 
-          aria-required="true" 
+          required
             placeholder="Enter address"
           autocomplete="street-address"><br>
         </div>
@@ -159,7 +160,7 @@
           type="text" 
           id="postal" 
           name="postal" 
-          aria-required="true"
+         required
             placeholder="Enter postal code"
           autocomplete="postal-code"> <br>
         </div>
@@ -170,7 +171,7 @@
           type="text" 
           id="country" 
           name="country" 
-          aria-required="true"
+         required
           placeholder="Enter country"
           autocomplete="country-name"><br>
         </div>
@@ -181,7 +182,7 @@
           type="text" 
           id="phone" 
           name="phone" 
-          aria-required="true" 
+          required
           placeholder="xx xx xx xx"
           autocomplete="tel"><br>
         </div>
@@ -209,7 +210,7 @@
       </div>
     </section>
 
-    <hr class="verticalDivider">
+    <hr class="verticalDivider"  aria-hidden="true">
 
     <section  role="region" class="sectionOrderSummary" aria-labelledby="order-summary-heading">
 
@@ -220,26 +221,26 @@
         <p class="itemInfo">Patagonia Fleece Men</p>
         <p class="itemInfo">899,99kr</p>
       </div>
-
+<dl>
       <div class="flexBetween">
         <div>
-          <p class="orderInfo"> Discount</p>
+          <dt class="orderInfo"> Discount</dt>
           <a>Add a discount code</a>
         </div>
-        <p class="orderInfo"> 0 kr </p>
+        <dd class="orderInfo"> 0 kr </dd>
       </div>
       <div class="flexBetween">
-        <p class="orderInfo"> Shipping</p>
-        <p class="orderInfo"> FREE </p>
+        <dt class="orderInfo"> Shipping</dt>
+        <dd class="orderInfo"> FREE </dd>
       </div>
 
-      <hr>
+      <hr  aria-hidden="true">
       <div class="flexBetween totalDiv">
 
-        <p class="orderInfo totalP"> Total</p>
-        <p class="orderInfo"> 899,00 kr</p>
+        <dt class="orderInfo totalP"> Total</dt>
+        <dd class="orderInfo"> 899,00 kr</dd>
       </div>
-
+</dl>
     </section>
   </main>
 <footer>
