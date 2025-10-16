@@ -87,18 +87,18 @@
 
   <main class="mainCheckoutPage flexDiv">
 
-    <section  role="region" class="sectionContact" aria-label="checkout options and shipping info">
+    <section role="region" class="sectionContact" aria-label="checkout options and shipping info">
       <div>
         <h1 class="expressText">Express Checkout</h1>
         <div class="expressBtnDiv">
           <span id="new-tab-note" class="visually-hidden"> (Opens in a new tab)</span>
           <a class="expressBtn paypal" href="https://www.paypal.com/no/home" target="_blank"
-            aria-label="Pay with Paypal"  aria-describedby="new-tab-note" rel="noopener">
+            aria-label="Pay with Paypal" aria-describedby="new-tab-note" rel="noopener">
             <img src="/svg-img/svg/sosials/paypal.png" alt="Paypal Logo">
           </a>
 
-          <a class="expressBtn google" href="https://pay.google.com/intl/no_no/about/" aria-describedby="new-tab-note" target="_blank"
-            aria-label="Pay with Google Pay"  rel="noopener">
+          <a class="expressBtn google" href="https://pay.google.com/intl/no_no/about/" aria-describedby="new-tab-note"
+            target="_blank" aria-label="Pay with Google Pay" rel="noopener">
             <img src="/svg-img/svg/sosials/googlepay.png" alt="Google Pay Logo">
           </a>
         </div>
@@ -122,69 +122,38 @@
         <div class="checkoutNameDiv">
           <div class="form-group">
             <label for="fname"> First Name</label><br>
-            <input 
-            type="text" 
-            id="fname" 
-            name="fname" 
-            required
-            autocomplete="given-name"
-            placeholder="Enter first name"><br>
+            <input type="text" id="fname" name="fname" required autocomplete="given-name"
+              placeholder="Enter first name"><br>
           </div>
 
           <div class="form-group">
             <label for="lname"> Last Name</label><br>
-            <input 
-            type="text" 
-            id="lname" 
-            name="lname" 
-            required
-            placeholder="Enter Last Name"
-            autocomplete="family-name"><br>
+            <input type="text" id="lname" name="lname" required placeholder="Enter Last Name"
+              autocomplete="family-name"><br>
           </div>
         </div>
 
         <div class="form-group">
           <label for="address"> Address</label><br>
-          <input 
-          type="text" 
-          id="address" 
-          name="address" 
-          required
-            placeholder="Enter address"
-          autocomplete="street-address"><br>
+          <input type="text" id="address" name="address" required placeholder="Enter address"
+            autocomplete="street-address"><br>
         </div>
 
         <div class="form-group">
           <label for="postal"> Postal Number</label><br>
-          <input 
-          type="text" 
-          id="postal" 
-          name="postal" 
-         required
-            placeholder="Enter postal code"
-          autocomplete="postal-code"> <br>
+          <input type="text" id="postal" name="postal" required placeholder="Enter postal code"
+            autocomplete="postal-code"> <br>
         </div>
 
         <div class="form-group">
           <label for="country"> Country</label><br>
-          <input 
-          type="text" 
-          id="country" 
-          name="country" 
-         required
-          placeholder="Enter country"
-          autocomplete="country-name"><br>
+          <input type="text" id="country" name="country" required placeholder="Enter country"
+            autocomplete="country-name"><br>
         </div>
 
         <div class="form-group">
           <label for="phone"> Phone Number</label><br>
-          <input 
-          type="text" 
-          id="phone" 
-          name="phone" 
-          required
-          placeholder="xx xx xx xx"
-          autocomplete="tel"><br>
+          <input type="text" id="phone" name="phone" required placeholder="xx xx xx xx" autocomplete="tel"><br>
         </div>
       </section>
 
@@ -193,8 +162,8 @@
 
         <div class="backToBtnDivCheckout">
           <a class="backBtn" href="/cart-page.html">
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
               class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M5 12l14 0" />
@@ -206,13 +175,13 @@
             </span>
           </a>
         </div>
-        <a href="/" class="btn checkoutBtn"> Continue</a>
+        <a href="#" class="btn checkoutBtn"> Continue</a>
       </div>
     </section>
 
-    <hr class="verticalDivider"  aria-hidden="true">
+    <hr class="verticalDivider" aria-hidden="true">
 
-    <section  role="region" class="sectionOrderSummary" aria-labelledby="order-summary-heading">
+    <section role="region" class="sectionOrderSummary" aria-labelledby="order-summary-heading">
 
       <h1 id="order-summary-heading"> Order Summary</h1>
 
@@ -221,40 +190,40 @@
         <p class="itemInfo">Patagonia Fleece Men</p>
         <p class="itemInfo">899,99kr</p>
       </div>
-<dl>
-      <div class="flexBetween">
-        <div>
-          <dt class="orderInfo"> Discount</dt>
-          <a>Add a discount code</a>
+      <dl>
+        <div class="flexBetween">
+          <div>
+            <dt class="orderInfo"> Discount</dt>
+            <a href="/comingsoon-page.html">Add a discount code</a>
+          </div>
+          <dd class="orderInfo"> 0 kr </dd>
         </div>
-        <dd class="orderInfo"> 0 kr </dd>
-      </div>
-      <div class="flexBetween">
-        <dt class="orderInfo"> Shipping</dt>
-        <dd class="orderInfo"> FREE </dd>
-      </div>
+        <div class="flexBetween">
+          <dt class="orderInfo"> Shipping</dt>
+          <dd class="orderInfo"> FREE </dd>
+        </div>
 
-      <hr  aria-hidden="true">
-      <div class="flexBetween totalDiv">
+        <hr aria-hidden="true">
+        <div class="flexBetween totalDiv">
 
-        <dt class="orderInfo totalP"> Total</dt>
-        <dd class="orderInfo"> 899,00 kr</dd>
-      </div>
-</dl>
+          <dt class="orderInfo totalP"> Total</dt>
+          <dd class="orderInfo"> 899,00 kr</dd>
+        </div>
+      </dl>
     </section>
   </main>
-<footer>
+  <footer>
 
     <div class="flexDivFooter">
       <div class="logoAndSocials">
         <a href="/" aria-label="Rainy Days Home">
-          <img class="logo" src="/svg-img/img/RainyDaysLogoLight.svg" alt="" >
+          <img class="logo" src="/svg-img/img/RainyDaysLogoLight.svg" alt="">
         </a>
 
         <a class="mobileLinks" href="/comingsoon-page.html"> Help & Information </a>
         <a class="mobileLinks" href="/comingsoon-page.html"> About Rainy Days </a>
 
-        <div  aria-label="Follow Rainy Days on social media">
+        <div aria-label="Follow Rainy Days on social media">
           <ul class="socials">
             <li>
               <a href="https://youtube.com/" aria-label=" Rainy Days on Youtube">
@@ -268,12 +237,12 @@
             </li>
             <li>
               <a href="https://instagram.com/" aria-label=" Rainy Days on X (formally twitter)">
-              <img src="/svg-img/svg/sosials/instagram.svg" alt="" aria-hidden="true">
+                <img src="/svg-img/svg/sosials/instagram.svg" alt="" aria-hidden="true">
               </a>
             </li>
             <li>
               <a href="https://facebook.com/" aria-label=" Rainy Days on X (formally twitter)">
-           <img src="/svg-img/svg/sosials/facebook.svg" alt="" aria-hidden="true">
+                <img src="/svg-img/svg/sosials/facebook.svg" alt="" aria-hidden="true">
               </a>
             </li>
           </ul>
@@ -308,7 +277,7 @@
 
   </footer>
 
-  
+
 </body>
 
 </html>
