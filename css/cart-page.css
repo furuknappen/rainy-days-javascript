@@ -66,15 +66,16 @@ h2 {
   height: 30px;
 }
 
-.plusBtn {
+.minusBtn {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-}
-
-.minusBtn {
   padding-inline: 0.5em;
   padding-top: 0em;
   padding-bottom: 0.2em;
+}
+
+.plusBtn{
+
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
