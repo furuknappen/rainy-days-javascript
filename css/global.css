@@ -4,17 +4,17 @@
   box-sizing: border-box;
 }
 
-
-
-
 a {
   /* color:black; */
   text-decoration: none;
-
+}
+a:focus {
+  border: 2px solid var(--accentColor3);
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
+    cursor:pointer;
 }
 
 li {
@@ -32,10 +32,9 @@ li {
 @media (min-width: 2550px) {
   main {
     padding-inline: 20rem;
-  
-  } 
+  }
 
-   #gridContainerHomepage {
+  #gridContainerHomepage {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 40%;
   }
@@ -45,7 +44,6 @@ h1 {
   font-family: "Open sans";
   font-weight: 400;
   font-size: 1.5rem;
- 
 }
 
 h2 {
@@ -79,21 +77,30 @@ input:focus {
   border: none;
   cursor: pointer;
   border-radius: var(--borderRadius);
-   text-decoration: none;
+  text-decoration: none;
 }
 
 .btn:hover {
   background-color: var(--logoColor);
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .btn:active {
   background-color: var(--darkestColor);
   color: white;
-    transform: translateY(2px);
-    text-decoration: none;
+  transform: translateY(2px);
+  text-decoration: none;
 }
 
-.btn::after{
-    text-decoration: none;
+.btn::after {
+  text-decoration: none;
+}
+
+button:hover{
+   cursor:pointer;
+}
+
+/* look into this - cart */
+.visually-hidden{
+  display: none;
 }
