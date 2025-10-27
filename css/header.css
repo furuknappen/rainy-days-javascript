@@ -6,7 +6,7 @@ header {
   align-items: center;
   padding-inline: 1rem;
   height: 3.5rem;
-  margin-top: 0rem; 
+  margin-top: 0rem;
   /*dette er ikke et godt valg*/
   box-shadow: 0 1px 3px hsla(193, 53%, 35%, 0.12);
 }
@@ -15,6 +15,7 @@ header {
   display: none;
   justify-content: space-evenly;
   flex: 1;
+  /* flex-direction: column; */
   /* justify-self: center */
 }
 
@@ -23,7 +24,7 @@ header {
   font-family: var(--third-font);
   color: var(--mainColor);
   text-decoration-thickness: 2px;
-  padding:1.5rem;
+  padding: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -60,18 +61,19 @@ header {
 
 
 /* .............. iPads (tablets) - Landscape ............ */
-@media (min-width: 769px) /*and (max-width: 1024px)*/ {
+@media (min-width: 769px)
+/*and (max-width: 1024px)*/
+  {
   header {
     padding-inline: 1.5rem;
     /* background-color: rgb(236, 180, 180); */
     height: 3.5rem;
-       margin-top: 0rem
- 
+    margin-top: 0rem
   }
 
   .navLinks {
     display: flex;
-    
+
   }
 
   #hamburgerBTN {
@@ -126,29 +128,27 @@ header {
   position: relative;
 }
 
-#menu-checkbox:checked ~ .navMobLinks {
-  display:block;
+#menu-checkbox:checked~.navMobLinks {
+  display: block;
 }
 
-.navMobLinks{
+.navMobLinks {
   position: absolute;
   right: 0;
   top: 56px;
   background-color: var(--accentColor5);
- padding-block:1rem
+  padding-block: 1rem;
+  /* flex-direction: column; */
 }
 
-.navMob {
-  display:block;
+.navLink {
+  display: block;
   padding-block: 0.4rem;
   padding-left: 1rem;
- padding-right: 3rem;
- color: var(--mainColor);
+  padding-right: 3rem;
+  color: var(--mainColor);
 }
 
-
-
-.navMob:active {
- background-color: var(--accentColor4);
+.navLink:active {
+  background-color: var(--accentColor4);
 }
-
