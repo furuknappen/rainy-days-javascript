@@ -9,11 +9,16 @@
 
 .comingSoonMain p {
   font-family: var(--second-font);
-  margin-top: 2rem;
+  margin-block: 2rem;
 }
 
 .tool {
   height: 100px
+}
+.comingSoonBtn {
+  position: absolute;
+  top: 4rem;
+  left: 1rem
 }
 
 @media (min-width: 768px) {

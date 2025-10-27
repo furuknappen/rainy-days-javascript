@@ -106,7 +106,7 @@ h2 {
 
 /* ---- side bar ----*/
 .orderSummaryDiv {
-  border-radius: 3px;
+  border-radius: var(--borderRadius);
   display: flex;
   flex-direction: column;
   border: none;

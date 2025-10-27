@@ -31,7 +31,7 @@
   /* display:block; */
   margin: 5vw;
   margin-right: 1vw;
-  border-radius: 3px;
+  border-radius: var(--borderRadius);
   font-size: 4.5vw;
   background-color: var(--accentColor4);
   padding: 10px 19px 4px;
