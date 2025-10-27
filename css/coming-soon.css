@@ -1,6 +1,29 @@
-.comingSoonMain{
-  display:flex;
+.comingSoonMain {
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 60rem;
+  margin-block: 8rem;
+  flex-direction: column;
+  text-align: center;
+}
+
+.comingSoonMain p {
+  font-family: var(--second-font);
+  margin-top: 2rem;
+}
+
+.tool {
+  height: 100px
+}
+
+@media (min-width: 768px) {
+  .comingSoonMain {
+    margin-block: 13rem;
+  }
+
+  .tool {
+    height: 150px;
+    margin-bottom: 5rem;
+  }
+
 }
