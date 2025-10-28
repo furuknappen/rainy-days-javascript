@@ -41,7 +41,7 @@
   background-color: white;
   border-color: var(--accentColor2);
   border-radius: var(--borderRadius);
-  color:black;
+  color: black;
   border-style: solid;
   margin: 0.2rem;
   font-size: 2rem;
@@ -50,6 +50,7 @@
 .buttonDiv {
   margin-block: 2rem;
 }
+
 .itempageBtn {
   font-size: 1.3rem;
   display: inline-block;
@@ -67,6 +68,7 @@
   .itemImage {
     padding-inline: 4rem;
   }
+
   .textSide {
     padding-block: 0rem;
   }

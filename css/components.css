@@ -9,6 +9,7 @@
   /* left: 300px ; */
   /* margin-block: 0rem; */
 }
+
 .linkBackBtn {
   color: var(--accentColor1);
   font-family: var(--second-font);
@@ -33,6 +34,7 @@
   margin: 1rem;
   width: 6rem;
 }
+
 /* -------- breadcrumbs -------- */
 .navBreadCrumbs {
   margin: 1rem;
@@ -48,13 +50,14 @@
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
 }
+
 .breadcrumbs {
   list-style: none;
   display: flex;
   gap: 0.1rem;
 }
 
-.breadcrumbs li + li::before {
+.breadcrumbs li+li::before {
   content: ">";
   margin: 0.1rem;
   /* text-decoration: none; */
@@ -72,13 +75,14 @@
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
 }
+
 /* -------- breadcrumbs STOP-------- */
 
 /* .............. iPads (tablets) - Landscape ............ */
 @media (min-width: 768px) {
-.backBtn {
-  margin: 2rem;
-}
+  .backBtn {
+    margin: 2rem;
+  }
 
   .breadcrumbs a {
     font-family: var(--second-font);
@@ -90,7 +94,7 @@
     gap: 0.2rem;
   }
 
-  .breadcrumbs li + li::before {
+  .breadcrumbs li+li::before {
     margin: 0.6rem;
   }
 }

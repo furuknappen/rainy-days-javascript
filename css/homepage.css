@@ -39,6 +39,7 @@
   border-style: none;
   color: var(--mainColor);
 }
+
 .genderBtn a {
   color: var(--mainColor);
 }
@@ -57,6 +58,7 @@
   justify-content: center;
   align-items: end;
 }
+
 .genderPhotoSingle {
   height: auto;
   width: 100%;
@@ -135,9 +137,11 @@
   .headingMainpage {
     margin-left: 0%;
   }
+
   #gridContainerHomepage {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
   .bestsellerDiv {
     margin-inline: 1rem;
   }
@@ -160,7 +164,7 @@
   }
 
 
-   .bestsellerLink{
+  .bestsellerLink {
     font-size: 2rem;
-   }
+  }
 }

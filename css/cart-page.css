@@ -74,7 +74,7 @@ h2 {
   padding-bottom: 0.2em;
 }
 
-.plusBtn{
+.plusBtn {
 
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -93,6 +93,7 @@ h2 {
   stroke: rgb(56, 55, 55);
   position: relative;
 }
+
 .removeBtn {
   position: absolute;
   right: 25px;
@@ -142,6 +143,7 @@ h2 {
 hr {
   border: 1px solid var(--accentColor3);
 }
+
 .dividerHrCart {
   display: none;
   border: 1px solid var(--accentColor3);

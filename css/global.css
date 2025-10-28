@@ -8,13 +8,14 @@ a {
   /* color:black; */
   text-decoration: none;
 }
+
 /* a:focus {
   border: 2px solid var(--accentColor3);
 } */
 
 a:hover {
   text-decoration: underline;
-    cursor:pointer;
+  cursor: pointer;
 }
 
 li {
@@ -39,6 +40,7 @@ li {
     max-width: 40%;
   }
 }
+
 /* ------------- */
 h1 {
   font-family: "Open sans";
@@ -96,12 +98,12 @@ input:focus {
   text-decoration: none;
 }
 
-button:hover{
-   cursor:pointer;
+button:hover {
+  cursor: pointer;
 }
 
 /* look into this - cart */
-.visually-hidden{
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;

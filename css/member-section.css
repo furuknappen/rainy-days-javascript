@@ -14,7 +14,7 @@
   font-weight: bold;
   letter-spacing: 2%;
   font-size: 1.5rem;
-  color:black;
+  color: black;
 
 }
 
@@ -22,7 +22,7 @@
   font-family: var(--main-font);
   margin-inline: 3rem;
   margin-bottom: 1rem;
-  color:black;
+  color: black;
 }
 
 .memberInput {
@@ -37,7 +37,9 @@
 }
 
 /* .............. iPads (tablets) - Landscape ............ */
-@media (min-width: 769px) /*and (max-width: 1024px) */ {
+@media (min-width: 769px)
+/*and (max-width: 1024px) */
+  {
   .memberDiv h1 {
     font-size: 3rem;
     margin-bottom: 2rem;

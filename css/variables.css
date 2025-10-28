@@ -2,13 +2,13 @@
   /* --main-font: 'Montserrat'; */
   --main-font: 'Montserrat', verdana;
   --second-font: 'Open Sans', verdana;
-  --third-font: "Overpass Mono", monospace ;
+  --third-font: "Overpass Mono", monospace;
 }
 
 
 :root {
   --logoColor: #0A3641;
-  --mainColor: #1E2832; 
+  --mainColor: #1E2832;
   --accentColor1: #2b788b;
   --accentColor2: #80c3d4;
   --accentColor3: #a9deec;
@@ -20,7 +20,6 @@
   --conformationText: #73B136;
 }
 
-:root{
+:root {
   --borderRadius: 3px
 }
-

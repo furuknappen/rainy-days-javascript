@@ -51,6 +51,7 @@
 .google {
   background-color: rgb(27, 27, 27);
 }
+
 .google:hover {
   background-color: rgb(51, 51, 51);
 }
@@ -141,7 +142,7 @@ label {
     flex-direction: row;
     justify-content: center;
     margin-bottom: 5rem;
-  } 
+  }
 
   .expressBtnDiv {
     flex-direction: row;
@@ -172,7 +173,7 @@ label {
     padding: 2rem;
     width: 25%;
     min-width: 20rem;
-  
+
   }
 
 }
