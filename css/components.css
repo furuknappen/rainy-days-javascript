@@ -59,7 +59,7 @@
   margin: 0.1rem;
   /* text-decoration: none; */
   font-family: var(--second-font);
-  color: gray;
+  color: rgb(78, 78, 78);
 }
 
 .breadcrumbs li:last-child::after {
