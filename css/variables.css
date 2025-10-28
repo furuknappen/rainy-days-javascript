@@ -1,8 +1,8 @@
 :root {
   /* --main-font: 'Montserrat'; */
-  --main-font: 'Montserrat', sans-serif;
-  --second-font: 'Open Sans';
-  --third-font: "Overpass Mono";
+  --main-font: 'Montserrat', verdana;
+  --second-font: 'Open Sans', verdana;
+  --third-font: "Overpass Mono", monospace ;
 }
 
 
