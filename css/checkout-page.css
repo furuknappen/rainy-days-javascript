@@ -135,6 +135,11 @@ label {
   margin-top: 0.5rem;
 }
 
+.orderInfo{
+  display:flex;
+  flex-direction: column;
+}
+
 /* .............. iPads (tablets) - Landscape ............ */
 @media (min-width: 768px) {
   .mainCheckoutPage {
