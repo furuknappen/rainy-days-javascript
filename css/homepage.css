@@ -1,5 +1,5 @@
 .genderPhotoDiv {
-  background-color: aqua;
+  /* background-color: aqua; */
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -11,7 +11,7 @@
 }
 
 .pictureDiv {
-  background: orange;
+  /* background: orange; */
   display: flex;
   width: 100vw;
   display: flex;
