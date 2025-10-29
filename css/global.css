@@ -35,10 +35,6 @@ li {
     padding-inline: 20rem;
   }
 
-  #gridContainerHomepage {
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 40%;
-  }
 }
 
 /* ------------- */

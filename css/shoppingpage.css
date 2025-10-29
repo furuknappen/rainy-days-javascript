@@ -76,3 +76,22 @@ aside {
 
   }
 }
+
+
+/* ............ Desktops ................*/
+@media (min-width: 1025px) {
+  .shoppingMain {
+    justify-content: space-between;
+    padding-inline: 10%
+  }
+}
+
+
+/*............ Large Desktops ................*/
+@media (min-width: 2550px) {
+  .shoppingMain {
+    justify-content: space-between;
+    padding-right: 30%
+  }
+
+}

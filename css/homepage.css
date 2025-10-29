@@ -154,17 +154,15 @@
 /*............ Desktops ................*/
 @media (min-width: 1025px) {
   #gridContainerHomepage {
-    grid-template-columns: 1fr 1fr 1fr;
     width: 60rem;
-    margin-bottom: 3rem;
   }
 
   .card:last-child {
     display: flex;
   }
 
-
   .bestsellerLink {
     font-size: 2rem;
   }
 }
+
