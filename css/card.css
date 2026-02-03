@@ -1,20 +1,29 @@
 .card {
 
-  border: 1px solid #aca8a8;
+  border: 1px solid #b8b4b4;
   display: flex;
   flex-direction: column;
   border-radius: var(--borderRadius);
-  width: 100%;
+  /* width: 100%; */
 
   color: black;
 }
 
+.imgDiv{
+ /* border: 2px solid red; */
+ height: 300px;
+ display: flex;
+ justify-content: center;
+ padding-block: 1rem
+}
+
 .cardImg {
-  max-width:100% ;
+  max-height:100% ;
   height: auto;
   object-fit: cover;
   border-radius: 4px;
-
+  
+ /* border: 2px solid red; */
 }
 
 .cardTextDiv {
@@ -29,7 +38,6 @@
 }
 
 .itemName {
-
   font-size: clamp(1rem, 2vw, 2.5rem);
   font-family: var(--main-font);
   font-weight: 400;
