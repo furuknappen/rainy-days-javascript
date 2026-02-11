@@ -1,8 +1,8 @@
-const productId = "b8b528fc-6c60-41f6-a5a9-9a8b27a9482a"
+const productId = "b8b528fc-6c60-41f6-a5a9-9a8b27a9482a";
 
 const base_url = "https://v2.api.noroff.dev";
 
-const jacketSection = document.getElementById("flexDivItemPage");
+const jacketSection = document.querySelector(".flexDivItemPage");
 
 async function fetchData() {
   try {
@@ -11,71 +11,67 @@ async function fetchData() {
       throw new Error("Could not fetch data: " + response.status);
     }
     const result = await response.json();
-    const jackets = result.data;
+    const item = result.data;
 
-    return jackets;
+    return item;
   } catch (error) {
     console.log("something went wrong " + error);
   }
 }
 
-const jackets = await fetchData()
-console.log(jackets)
+const items = await fetchData();
+console.log(items);
 
-async function createItemPage(item) {
-  item.forEach(function (item) {
-    const card = document.createElement("a");
+async function displayItem(items) {
+  const item = await fetchData();
+  document.querySelector(".itemImage").src = item.image.url;
+  document.querySelector(".itemImage").alt = item.image.alt;
+  document.querySelector(".h1Itemname").textContent = item.title;
+  document.querySelector(".itemGender").textContent = item.gender;
 
-    const name = document.createElement("h2");
-    const description = document.createElement("p");
-    const gender = document.createElement("p");
-    const sizes = document.createElement("p");
-    const color = document.createElement("div");
-    const price = document.createElement("p");
-    const imgDiv = document.createElement("div");
-    const tags = document.createElement("p");
-    const image = document.createElement("img"); //add ALT text
-    const cardTextDiv = document.createElement("div");
-    imgDiv.classList.add("imgDiv");
 
-    if (item.onSale) {
-      const onSale = document.createElement("p");
-      // .classList.add(".line-through")
-      onSale.innerText = `On sale! Before: ${item.price}`;
-      price.textContent = item.discountedPrice;
-      card.appendChild(onSale);
-      console.log("onsale works");
-    } else {
-      price.textContent = item.price;
-    }
+  const sizes = item.sizes.forEach(() => {
+    const sizeBtn = document.createElement('button');
+    sizeBtn.textContent = "item.sizes[0]";
+    document.querySelector(".buttonDiv").appendChild(sizes)
 
-    cardTextDiv.classList.add(cardTextDiv);
-    cardTextDiv.appendChild(name);
-    cardTextDiv.appendChild(price);
-
-    price.classList.add("itemPrice");
-    name.textContent = item.title;
-    image.classList.add("itemName");
-
-    description.textContent = item.description;
-    gender.textContent = item.gender;
-    sizes.textContent = item.sizes;
-    color.style.backgroundColor = item.color; //?
-
-    image.src = item.image.url;
-    image.alt = item.image.alt;
-    image.classList.add("cardImg");
-
-    imgDiv.appendChild(image);
-    card.appendChild(imgDiv);
-    card.appendChild(name);
-    // card.appendChild(description);
-    // card.appendChild(gender);
-    // card.appendChild(sizes);
-    // card.appendChild(color);
-    card.appendChild(price);
-    // card.appendChild(tags);
-
-    cardsSection.appendChild(card);
   });
+
+  //  if (item.onSale) {
+  //     const onSale = document.createElement("p");
+  //     // .classList.add(".line-through")
+  //     onSale.innerText = `On sale! Before: ${jacket.price}`;
+  //     price.textContent = jacket.discountedPrice;
+  //     price.appendChild(onSale);
+  //     console.log("onsale works");
+  //   } else {
+  //     price.textContent = jacket.price;
+  //   }
+  //   cardTextDiv.appendChild(price);
+
+  //   cardsSection.appendChild(card);
+  // });
+
+  // fix if setning på price
+  document.querySelector(".price").textContent = item.price;
+
+  document.querySelector(".infoText").textContent = item.description;
 }
+
+displayItem();
+
+// SKELETON CODE
+
+// window.onload = function () {
+//   const skeleton= document.querySelector(".skeleton-container")
+//   const content = document.getElementById(".content")
+
+//   content.style.display= "none"
+//   skeleton.style.display= "flex"
+
+//   setTimeout(function () {
+//     skeleton.style.display= "none"
+//     content.style.display= "flex"
+//   }, 2000)
+// }
+// ------------
