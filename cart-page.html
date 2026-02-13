@@ -14,8 +14,7 @@
     rel="stylesheet">
 
   <meta property="og:title" content="Rainy Days | Your shopping-bag">
-  <meta property="og:description"
-    content="This is your cart with all your chosen items in it">
+  <meta property="og:description" content="This is your cart with all your chosen items in it">
   <meta property="og:url" content="https://furuknappen.github.io/html-css-camilla-furuknappen-larsen/cart-page.html">
   <meta property="og:type" content="website">
   <meta property="og:image"
@@ -96,12 +95,16 @@
     <section role="region" class="cartSummaryDiv" aria-labelledby="cart-heading">
       <h1 class="heading" id="cart-heading">Your Shoppingbag</h1>
 
-
+      <!-- remove productline from css -->
 
       <h2>Products</h2>
-      <div class="productLine">
-        <img src="svg-img/img/jackets-img/Vector.png" alt="Patagonia Fleece Jacket for men">
-        <div class="cartText">
+      <div class="productContainer">
+
+
+        <!-- skeleton here..? -->
+        <!-- <div class="product-line"> -->
+        <!-- <img src="svg-img/img/jackets-img/Vector.png" alt="Patagonia Fleece Jacket for men"> -->
+        <!-- <div class="cartText">
           <p class="itemInfo"> <b>Patagonia Fleece Men</b></p>
           <div class="quantityDiv">
             <button type="button" class="minusBtn quantityBtn" aria-label="decrease quantity"> - </button>
@@ -110,8 +113,8 @@
             <button type="button" class="plusBtn quantityBtn" aria-label="increase quantity"> + </button>
           </div>
           <p class="itemInfo">899,99kr</p>
-        </div>
-        <button class="removeBtn" aria-label="remove Patagonia Fleece men from cart">
+        </div> -->
+        <!-- <button class="removeBtn" aria-label="remove Patagonia Fleece men from cart">
           <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="40" height="40" viewBox="0 0 24 24"
             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
@@ -122,7 +125,8 @@
             <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
             <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
           </svg>
-        </button>
+        </button> -->
+ 
       </div>
     </section>
 
@@ -162,7 +166,7 @@
         </div>
         <div class="flexBetween totalDiv">
           <dt class="orderInfo"> Total</dt>
-          <dd class="orderInfo"> 899,00 kr</dd>
+          <dd class="orderInfo"><span class="totalPrice"> </span>  kr</dd>
         </div>
       </dl>
       <a href="checkout-page.html" class="btn cartpageBtn"> Go to checkout</a>
@@ -233,6 +237,7 @@
 
 
   </footer>
+  <script type="module" src="cartPage.js"></script>
 </body>
 
 </html>

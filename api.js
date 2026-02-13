@@ -71,6 +71,10 @@ async function createHomePage(jackets) {
     cardTextDiv.appendChild(price);
 
     cardsSection.appendChild(card);
+
+    card.addEventListener('click', () => {
+      window.location.href = `item-page.html?id=${jacket.id}`
+    })
   });
 }
 
