@@ -51,7 +51,7 @@
       <a class="navLink navHome" href="index.html">Home</a>
       <a class="navLink" href="shoppingpage.html">Woman</a>
       <a class="navLink" href="shoppingpage.html">Men</a>
-      <a class="navLink" href="shoppingpage.html" aria-current="page">All products</a>
+
     </nav>
 
     <div id="headerSvgs">
@@ -61,7 +61,8 @@
       <a href="comingsoon-page.html" aria-label="Profile">
         <img class="headerSvg" src="svg-img/svg/profile-pic-circle.svg" alt="" aria-hidden="true">
       </a>
-      <a href="cart-page.html" aria-label="Shopping bag">
+      <a class="cartBtn" href="cart-page.html" aria-label="Shopping bag">
+        <div class="cartNotification"></div>
         <img class="headerSvg" src="svg-img/svg/shopping-bag.svg" alt="" aria-hidden="true">
       </a>
     </div>
@@ -76,13 +77,16 @@
         <a class="navLink navHome" href="index.html" aria-current="page">Home</a>
         <a class="navLink" href="shoppingpage.html">Woman</a>
         <a class="navLink" href="shoppingpage.html">Men</a>
-        <a class="navLink" href="shoppingpage.html">All products</a>
+
       </nav>
     </div>
 
   </header>
 
-  <a class="backBtn linkBackBtn" href="shoppingpage.html">
+
+
+  <main class="flexDivItemPage">
+      <a class="backBtn linkBackBtn" href="index.html">
     <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
       class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left">
@@ -95,47 +99,45 @@
       Back
     </span>
   </a>
-
-  <main class="flexDivItemPage">
     <div class="skeleton-container">
       <div class="skeleton-image"></div>
-   
-    <div class="textSide">
-      <div class="red skeleton-heading"></div>
-      <div class="blue skeleton-text">
-        <div class="skeleton-text-line"></div>
-        <div class="skeleton-text-line"></div>
-        <div class="skeleton-text-line"></div>
-      </div>
-      <div class="skeleton-size"></div>
-      <div class="itempageBtn">
-        <div class=" red skeleton-button"></div>
+
+      <div class="textSide">
+        <div class="red skeleton-heading"></div>
+        <div class="blue skeleton-text">
+          <div class="skeleton-text-line"></div>
+          <div class="skeleton-text-line"></div>
+          <div class="skeleton-text-line"></div>
+        </div>
+        <div class="skeleton-size"></div>
+        <div class="itempageBtn">
+          <div class=" red skeleton-button"></div>
+        </div>
       </div>
     </div>
- </div>
-  
+
 
     <div class="content">
-      <img class="itemImage" src="" alt=""> 
+      <img class="itemImage" src="" alt="">
       <div class="textSide">
         <h1 class="h1Itemname"> </h1>
         <div class="priceContainer">
 
         </div>
-        <p class="infoText">  </p>
+        <p class="infoText"> </p>
         <p>Gender: <span class="itemGender"> </span></p>
         <p>Color: <span class="itemColor"> </span></p>
-        <span class="visually-hidden">Color:  </span>
+        <span class="visually-hidden">Color: </span>
         <div class="colorCircle" style="background-color: #6D6244;" role="img" aria-hidden="true"></div>
 
         <div class="buttonDiv"></div>
-
-        <a class="btn itempageBtn" id="addToCartBtn" >Add to shoppingbag</a>
+<div id="noSizeError"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-alert-square-rounded"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9" /><path d="M12 8v4" /><path d="M12 16h.01" /></svg> Please choose a size</div>
+        <a class="btn itempageBtn" id="addToCartBtn">Add to shoppingbag</a>
       </div>
 
+    </div>
 
-
-      <!-- <div>
+    <!-- <div>
       <img class="itemImage" src="svg-img/img/jackets-img/Vector.png" alt="Patagonia Fleece Jacket for men">
     </div>
     <div class="textSide">
@@ -152,7 +154,7 @@
       </div>
 
       <a class="btn itempageBtn" href="cart-page.html">Add to shoppingbag</a> -->
-    </div>
+
   </main>
   <footer>
 

@@ -25,10 +25,10 @@ async function fetchData() {
 
 // const items = await fetchData();
 // console.log(items);
-
+let notificationCartNumber = "";
 async function displayItem() {
   const item = await fetchData();
-  console.log("Full item object:", item);
+  // console.log("Full item object:", item);
   document.querySelector(".itemImage").src = item.image.url;
   document.querySelector(".itemImage").alt = item.image.alt;
   document.querySelector(".h1Itemname").textContent = item.title;
@@ -36,13 +36,41 @@ async function displayItem() {
   document.querySelector(".itemColor").textContent = item.baseColor;
   document.querySelector(".infoText").textContent = item.description;
 
+  // const size = item.sizes.forEach((size) => {
+  //   console.log(size);
+  //   const sizeBtn = document.createElement("button");
+  //   sizeBtn.type = "radio"
+  //   sizeBtn.classList.add("sizeBtn");
+  //   sizeBtn.ariaLabel = "Select size " + size;
+  //   sizeBtn.textContent = size;
+  //   document.querySelector(".buttonDiv").appendChild(sizeBtn);
+  // });
+
   const size = item.sizes.forEach((size) => {
-    console.log(size);
-    const sizeBtn = document.createElement("button");
-    sizeBtn.classList.add("sizeBtn");
-    sizeBtn.ariaLabel = "Select size " + size.value;
-    sizeBtn.textContent = size;
-    document.querySelector(".buttonDiv").appendChild(sizeBtn);
+    const radioInput = document.createElement("input");
+    radioInput.type = "radio";
+    radioInput.name = "size";
+    radioInput.id = `size-${size}`;
+    radioInput.value = size;
+    radioInput.classList.add("size-radio");
+
+    const label = document.createElement("label");
+    label.htmlFor = `size-${size}`;
+    label.classList.add("sizeBtn");
+    label.textContent = size;
+    label.setAttribute("aria-label", `select size ${size}`);
+
+    document.querySelector(".buttonDiv").appendChild(radioInput);
+    document.querySelector(".buttonDiv").appendChild(label);
+
+    // label.addEventListener("click", () => {
+    //   label.style.backgroundColor = "red";
+
+    //   if(item.active){
+    //      label.style.backgroundColor = "transparent";
+    //   }
+
+    // })
   });
 
   const price = document.createElement("p");
@@ -66,28 +94,51 @@ async function displayItem() {
   }
 
   const addToCartBtn = document.getElementById("addToCartBtn");
+  const noSizeError = document.getElementById("noSizeError");
+
+  document.querySelectorAll("input[name='size']").forEach((radio) => {
+    radio.addEventListener("change", () => {
+      noSizeError.style.display = "none";
+    });
+  });
 
   addToCartBtn.addEventListener("click", (event) => {
-    event.preventDefault()
+    event.preventDefault();
 
-    addToCart(item)
-  }) 
+    const selectedSize = document.querySelector("input[name='size']:checked");
+
+    if (!selectedSize) {
+      noSizeError.style.display = "flex";
+      return;
+    }
+    noSizeError.style.display = "none";
+    addToCart(item, selectedSize.value);
+  });
 }
 
-
 function addToCart(item) {
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    cart.push(item);
-    localStorage.setItem("cart", JSON.stringify(cart));
-    console.log("added to cart " + cart.length);
-  };
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.push(item);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  console.log("added to cart " + cart.length);
+  displayToastNotification(item);
+  setTimeout(() => {
+    document.querySelector(".toastNotification").style.display = "none";
+  }, 2000);
 
 
+  // fortsett her 
+   document.querySelector(".cartNotification").textContent= cart.length;
+  console.log("cart length: " + notificationCartNumber)
+ 
 
-const cartContent = localStorage.getItem("cart")
-console.log("things in cart: " +cartContent)
+  // notificationCartHeader.classList.add(".cartNotification");
+  // notificationCartNumber.textContent = "yes";
+  
+}
 
-
+const cartContent = localStorage.getItem("cart");
+// console.log("things in cart: " + cartContent);
 
 // SKELETON CODE
 window.onload = async function () {
@@ -102,3 +153,15 @@ window.onload = async function () {
   skeleton.style.display = "none";
 };
 
+function displayToastNotification(item) {
+  const toastDiv = document.createElement("div");
+  toastDiv.classList.add("toastNotification");
+
+  const checkmark = document.createElement("div");
+  checkmark.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>`;
+  const info = document.createElement("p");
+  info.textContent = `You have successfully added ${item.title} to your cart!`;
+
+  toastDiv.append(checkmark, info);
+  document.querySelector(".flexDivItemPage").append(toastDiv);
+}
