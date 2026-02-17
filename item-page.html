@@ -77,7 +77,7 @@
         <a class="navLink navHome" href="index.html" aria-current="page">Home</a>
         <a class="navLink" href="shoppingpage.html">Woman</a>
         <a class="navLink" href="shoppingpage.html">Men</a>
-
+ <a class="navLink" href="shoppingpage.html">Shoppingbag</a>
       </nav>
     </div>
 
@@ -86,19 +86,19 @@
 
 
   <main class="flexDivItemPage">
-      <a class="backBtn linkBackBtn" href="index.html">
-    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-      class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M5 12l14 0" />
-      <path d="M5 12l6 6" />
-      <path d="M5 12l6 -6" />
-    </svg>
-    <span>
-      Back
-    </span>
-  </a>
+    <a class="backBtn linkBackBtn" href="index.html">
+      <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M5 12l14 0" />
+        <path d="M5 12l6 6" />
+        <path d="M5 12l6 -6" />
+      </svg>
+      <span>
+        Back
+      </span>
+    </a>
     <div class="skeleton-container">
       <div class="skeleton-image"></div>
 
@@ -119,19 +119,27 @@
 
     <div class="content">
       <img class="itemImage" src="" alt="">
-      <div class="textSide">
+
+      <div class="textSide" id="textSide">
+        <div class="statusInfo"></div>
         <h1 class="h1Itemname"> </h1>
         <div class="priceContainer">
-
         </div>
         <p class="infoText"> </p>
-        <p>Gender: <span class="itemGender"> </span></p>
-        <p>Color: <span class="itemColor"> </span></p>
+        <p class="gray">Gender: <span class="itemGender"> </span></p>
+        <p class="gray">Color: <span class="itemColor"> </span></p>
         <span class="visually-hidden">Color: </span>
         <div class="colorCircle" style="background-color: #6D6244;" role="img" aria-hidden="true"></div>
 
         <div class="buttonDiv"></div>
-<div id="noSizeError"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-alert-square-rounded"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9" /><path d="M12 8v4" /><path d="M12 16h.01" /></svg> Please choose a size</div>
+        <div id="noSizeError"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-alert-square-rounded">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9" />
+            <path d="M12 8v4" />
+            <path d="M12 16h.01" />
+          </svg> Please choose a size</div>
         <a class="btn itempageBtn" id="addToCartBtn">Add to shoppingbag</a>
       </div>
 
@@ -221,6 +229,7 @@
 
   </footer>
   <script type="module" src="productPage.js"></script>
+   <script type="module" src="./header.js"></script>
 </body>
 
 </html>

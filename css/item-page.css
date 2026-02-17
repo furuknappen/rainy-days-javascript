@@ -17,7 +17,10 @@
 .textSide {
   padding-block: 5rem;
 }
-
+.statusInfo{
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
 .h1Itemname {
   font-family: var(--main-font);
   padding-inline: 0px;
@@ -119,19 +122,28 @@ display:flex
 .cartBtn{
   position: relative;
 }
-.cartNotification{
-  background-color: red;
-  color:white;
-  width: 3rem;
-  height:3rem;
-  position: absolute;
 
+.priceContainer{
+  font-size: 1.2rem;
+  padding-top: 0.8rem ;
+}
+
+.price{
+  font-size: 1.5rem;
+  padding-bottom: 0.3rem ;
+}
+.gray {
+  color: rgb(112, 112, 112)
+}
+
+.beforePriceDiv{
+  font-size: 0.9rem;
 }
 
 /* .............. iPads (tablets) - Landscape ............ */
 @media (min-width: 768px) {
   .infoText {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-block: 2rem;
     width: 30rem;
   }
@@ -151,6 +163,7 @@ display:flex
     align-items: center;
     margin-bottom: 9rem;
 }
+
 }
 
  

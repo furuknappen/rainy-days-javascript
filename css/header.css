@@ -59,6 +59,27 @@ header {
   display: none;
 }
 
+.cartNotification{
+  position: absolute;
+  bottom: -9px;
+  right: 5px;
+  background-color: red;
+  color:white;
+  /* width: 1rem;
+  height:1rem; */
+  /* padding: 0.2rem 0.4rem 0.1rem 0.4rem; */
+  border-radius: 999px;
+  position: absolute;
+  font-size: 12px;
+}
+
+.under10{
+  padding: 0.2rem 0.3rem 0.1rem 0.2rem;
+}
+
+.over10{
+  padding: 0.2rem 0.2rem 0.1rem 0.8rem;
+}
 
 /* .............. iPads (tablets) - Landscape ............ */
 @media (min-width: 769px)
@@ -114,11 +135,15 @@ header {
 
   #headerSvgs {
     display: flex;
-    /* padding-inline: 3rem; */
+    padding-inline: 3rem;
+
+    /* border: 2px solid red */
   }
 
   .headerSvg {
     padding-inline: 1rem;
+    /* border: 2px solid red; */
+    height: 100%
   }
 }
 

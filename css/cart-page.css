@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 3rem;
+  font-family: var(--main-font);
 }
 
 .cartSummaryDiv {
@@ -52,6 +53,8 @@ h2 {
 .productContainer img {
   width: 5rem;
   aspect-ratio: 1 / 1;
+  margin-left: 0.5rem;
+  margin-block: 0.5rem;
 }
 
 .cartText {
@@ -87,7 +90,6 @@ h2 {
 }
 
 .plusBtn {
-
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
@@ -118,6 +120,13 @@ h2 {
   transform: translateY(2px);
 }
 
+.noItems{
+  font-size: 1.2rem;
+  font-family: var(--main-font);
+  justify-self: left;
+  padding-block: 2rem;
+}
+
 /* ---- side bar ----*/
 .orderSummaryDiv {
   border-radius: var(--borderRadius);
@@ -127,6 +136,7 @@ h2 {
   padding: 1rem;
   order: 2;
   margin-top: 2rem;
+
 }
 
 .flexBetween {
@@ -173,20 +183,21 @@ hr {
 .backToBtnDivCart {
   order: 3;
   padding-top: 2rem;
+
 }
 
 /* .............. iPads (tablets) - Landscape ............ */
 @media (min-width: 768px) {
   .flexDiv {
     flex-direction: row;
-
+position:relative;
     align-items: center;
     justify-content: center;
     margin-bottom: 9rem;
   }
 
   .productContainer {
-    width: clamp(25rem, 50vw, 60rem);
+    width: clamp(25rem, 40vw, 60rem);
   }
 
   .itemInfo {
@@ -214,7 +225,7 @@ hr {
   }
 
   .cartSummaryDiv {
-    margin-inline: 1rem;
+    margin-inline: 6rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -225,11 +236,13 @@ hr {
     padding: 2rem;
     order: 2;
     min-width: 23rem;
+    align-self: flex-start
+
   }
 
   .backToBtnDivCart {
     position: absolute;
-    top: 40rem;
+    bottom: -5rem;
     left: 5%;
   }
 
