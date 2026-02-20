@@ -1,5 +1,5 @@
 'use strict';
-import {rerenderCartNotification} from "/header.js"
+import {rerenderCartNotification} from "./header.js"
 
 const base_url = "https://v2.api.noroff.dev";
 
