@@ -1,5 +1,5 @@
 'use strict';
-import {rerenderCartNotification} from "/header.js"
+import {rerenderCartNotification} from "./header.js"
 
 // const productId = "07a7655a-7927-421b-ba6a-b6742d5a75b8";
 // const onsaleId = "97e77845-a485-4301-827f-51b673d4230f"
