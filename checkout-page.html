@@ -14,9 +14,9 @@
     rel="stylesheet">
 
   <meta property="og:title" content="Rainy Days | Checkout">
-  <meta property="og:description"
-    content="Safely buy and pay your items on this page">
-  <meta property="og:url" content="https://furuknappen.github.io/html-css-camilla-furuknappen-larsen/checkout-page.html">
+  <meta property="og:description" content="Safely buy and pay your items on this page">
+  <meta property="og:url"
+    content="https://furuknappen.github.io/html-css-camilla-furuknappen-larsen/checkout-page.html">
   <meta property="og:type" content="website">
   <meta property="og:image"
     content="https://github.com/furuknappen/html-css-camilla-furuknappen-larsen/blob/main/svg-img/img/home-img.png">
@@ -48,14 +48,6 @@
       <img id="logo" src="svg-img/img/rainyDaysLogoSmall.svg" alt="">
     </a>
 
-
-    <nav class="navLinks" aria-label="Main Navigation">
-      <a class="navLink navHome" href="index.html">Home</a>
-      <a class="navLink" href="shoppingpage.html">Woman</a>
-      <a class="navLink" href="shoppingpage.html">Men</a>
-
-    </nav>
-
     <div id="headerSvgs">
       <a href="comingsoon-page.html" aria-label="Search">
         <img class="headerSvg" src="svg-img/svg/search.svg" alt="" aria-hidden="true">
@@ -68,7 +60,6 @@
       </a>
     </div>
 
-
     <!-- this is not accessibility friendly, source moodle -->
     <div id="hamburgerBTN" aria-label="Open Menu">
       <input type="checkbox" id="menu-checkbox" />
@@ -76,9 +67,7 @@
         <img id="hamburgerSvg" src="svg-img/svg/hamburger-menu.svg" alt="Hamburger menu"> </label>
       <nav class="navLinks navMobLinks" aria-label="Main Navigation">
         <a class="navLink navHome" href="index.html" aria-current="page">Home</a>
-        <a class="navLink" href="shoppingpage.html">Woman</a>
-        <a class="navLink" href="shoppingpage.html">Men</a>
-      <a class="navLink" href="cart-page.html">Shoppingbag</a>
+        <a class="navLink" href="cart-page.html">Shoppingbag</a>
       </nav>
     </div>
   </header>
@@ -186,22 +175,19 @@
     </section>
 
     <hr class="verticalDivider" aria-hidden="true">
-
+    
     <section role="region" class="sectionOrderSummary" aria-labelledby="order-summary-heading">
-
       <h1 id="order-summary-heading"> Order Summary</h1>
-
       <div class="miniCartContainer">
-        <!-- <img src="svg-img/img/jackets-img/Vector.png" alt="Patagonia Fleece Jacket for men">
-        <p class="itemInfo">Patagonia Fleece Men</p>
-        <p class="itemInfo">899,99kr</p> -->
+        <!-- cart is displayed here -->
       </div>
       <dl>
         <div class="flexBetween">
           <dt class="orderInfo"> Discount
-            <a href="comingsoon-page.html">Add a discount code</a></dt>
-          <dd class="orderInfo"> 0 kr 
-</dd>
+            <a href="comingsoon-page.html">Add a discount code</a>
+          </dt>
+          <dd class="orderInfo"> 0 kr
+          </dd>
         </div>
         <div class="flexBetween">
           <dt class="orderInfo"> Shipping</dt>
@@ -282,7 +268,7 @@
 
   </footer>
 
-<script type="module" src="checkoutPage.js"></script>
+  <script type="module" src="checkoutPage.js"></script>
 </body>
 
 </html>
