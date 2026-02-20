@@ -1,3 +1,4 @@
+'use strict';
 import {rerenderCartNotification} from "/header.js"
 
 // const productId = "07a7655a-7927-421b-ba6a-b6742d5a75b8";
@@ -129,7 +130,7 @@ function addToCart(item, size) {
   // console.log("added to cart " + cart.length, selectedSize);
   displayToastNotification(item);
   setTimeout(() => {
-    document.querySelector(".toastNotification").style.display = "none";
+    removeToastNotification()
   }, 2000);
 
  rerenderCartNotification()
@@ -159,6 +160,7 @@ window.onload = async function () {
   skeleton.style.display = "none";
 };
 
+// TODO: fix toastnotification, it dosent remove itself and its unreliable
 // TOAST NOTIFICATION
 function displayToastNotification(item) {
   const toastDiv = document.createElement("div");
@@ -171,4 +173,8 @@ function displayToastNotification(item) {
 
   toastDiv.append(checkmark, info);
   document.querySelector(".flexDivItemPage").append(toastDiv);
+}
+
+function removeToastNotification() {
+  document.querySelector(".toastNotification").remove()
 }

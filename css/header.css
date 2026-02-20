@@ -28,6 +28,11 @@ header {
   text-transform: uppercase;
 }
 
+.navMobLinks {
+  position: absolute;
+  z-index: 100;
+}
+
 .navlink[aria-current="page"] {
   color: var(--accentColor1)
 }
@@ -59,12 +64,12 @@ header {
   display: none;
 }
 
-.cartNotification{
+.cartNotification {
   position: absolute;
   bottom: -9px;
   right: 5px;
   background-color: red;
-  color:white;
+  color: white;
   /* width: 1rem;
   height:1rem; */
   /* padding: 0.2rem 0.4rem 0.1rem 0.4rem; */
@@ -73,11 +78,11 @@ header {
   font-size: 12px;
 }
 
-.under10{
+.under10 {
   padding: 0.2rem 0.3rem 0.1rem 0.2rem;
 }
 
-.over10{
+.over10 {
   padding: 0.2rem 0.2rem 0.1rem 0.8rem;
 }
 
@@ -176,4 +181,5 @@ header {
 
 .navLink:active {
   background-color: var(--accentColor4);
+
 }

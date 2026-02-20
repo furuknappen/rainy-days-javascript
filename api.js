@@ -1,18 +1,9 @@
-// TODO: add color circle
-// TODO: fix onsale size
-
-// TODO: fix sort by gender
-// TODO: 
-// TODO: 
-
-
-
-
-
+'use strict';
+import {rerenderCartNotification} from "/header.js"
 
 const base_url = "https://v2.api.noroff.dev";
 
-const cardsSection = document.getElementById("gridContainerHomepage");
+// const cardsSection = document.getElementById("gridContainerHomepage");
 
 async function fetchData() {
   try {
@@ -25,11 +16,14 @@ async function fetchData() {
 
     return jackets;
   } catch (error) {
+    // alert(error)
     console.log("something went wrong " + error);
   }
 }
 
-async function createHomePage(jackets) {
+function createHomePage(jackets) {
+  
+const cardsSection = document.getElementById("gridContainerHomepage");
   cardsSection.textContent = "";
   jackets.forEach(function (jacket) {
     const card = document.createElement("a");
@@ -59,40 +53,96 @@ async function createHomePage(jackets) {
     const price = document.createElement("p");
     price.classList.add("itemPrice");
     if (jacket.onSale) {
-      const onSale = document.createElement("p");
+      const onsale = document.createElement("p");
+      onsale.textContent = "On sale!";
+
+      
+
+      price.textContent = jacket.discountedPrice + " kr";
+       
+    const priceBeforeDiv = document.createElement("p");
+    priceBeforeDiv.innerHTML =
+      "Before: " + `<span class="line-through">${jacket.price}</span>`;
+    priceBeforeDiv.classList.add("gray", "beforePrice");
       // .classList.add(".line-through")
-      onSale.innerText = `On sale! Before: ${jacket.price}`;
-      price.textContent = jacket.discountedPrice;
-      price.appendChild(onSale);
-      console.log("onsale works");
+      //  price.appendChild(onsale)
+      // // 
+      // onSale.innerText = `On sale! Before: ${jacket.price}`;
+      // ;
+      // console.log("onsale works");
+      cardTextDiv.append(onsale, priceBeforeDiv);
     } else {
-      price.textContent = jacket.price;
+      price.textContent = jacket.price + " kr";
     }
     cardTextDiv.appendChild(price);
 
     cardsSection.appendChild(card);
 
-    card.addEventListener('click', () => {
-      window.location.href = `item-page.html?id=${jacket.id}`
-    })
+    card.addEventListener("click", () => {
+      window.location.href = `item-page.html?id=${jacket.id}`;
+    });
   });
+  rerenderCartNotification()
 }
+// debugger;
+let skeleton = document.querySelector(".skeleton-card-container");
+  let content = document.querySelector("#gridContainerHomepage");
+
+  content.style.display = "none";
+  skeleton.style.display = "grid";
+
+
 
 const jackets = await fetchData();
 
-const femaleBtn = document.getElementById("femaleBtn")
-const maleBtn = document.getElementById("maleBtn")
+
+ createHomePage(jackets);
+  content.style.display = "grid";
+  skeleton.style.display = "none";
+
+
 
 const femaleJackets = jackets.filter((jacket) => {
-return jacket.gender == "Female"
-})
-// 
-femaleBtn.addEventListener("click", () => {createHomePage(femaleJackets)} )
+  return jacket.gender == "Female";
+});
 
 const maleJackets = jackets.filter((jacket) => {
-return jacket.gender == "Male"
-})
+  return jacket.gender == "Male";
+});
 
-maleBtn.addEventListener("click",  () => {createHomePage(maleJackets)} )
+document.getElementById("femaleBtn").addEventListener("click", () => {
+  createHomePage(femaleJackets);
+});
+document.getElementById("maleBtn").addEventListener("click", () => {
+  createHomePage(maleJackets);
+});
 
-createHomePage(jackets);
+document.getElementById("femaleBtnMob").addEventListener("click", () => {
+  createHomePage(femaleJackets);
+});
+document.getElementById("maleBtnMob").addEventListener("click", () => {
+  createHomePage(maleJackets);
+});
+
+document.getElementById("getAllMob").addEventListener("click", () => {
+  createHomePage(jackets);
+});
+document.getElementById("getAllDesktop").addEventListener("click", () => {
+  createHomePage(jackets);
+});
+
+
+// createHomePage(jackets);
+
+// window.onload = function () {
+//   debugger;
+//   let skeleton = document.querySelector(".skeleton-card-container");
+//   let content = document.querySelector(".content");
+
+//   content.style.display = "none";
+//   skeleton.style.display = "flex";
+
+//   createHomePage(jackets);
+//   content.style.display = "flex";
+//   skeleton.style.display = "none";
+// };

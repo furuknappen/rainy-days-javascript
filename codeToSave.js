@@ -1,3 +1,5 @@
+'use strict';
+
 async function createItemPage(item) {
   item.forEach(function (item) {
     const card = document.createElement("a");

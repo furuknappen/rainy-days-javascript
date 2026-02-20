@@ -52,7 +52,7 @@
       <a class="navLink" href="index.html" aria-current="page">Home</a>
       <a class="navLink" href="shoppingpage.html">Woman</a>
       <a class="navLink" href="shoppingpage.html">Men</a>
-   
+
     </nav>
 
 
@@ -64,6 +64,7 @@
         <img class="headerSvg" src="svg-img/svg/profile-pic-circle.svg" alt="" aria-hidden="true">
       </a>
       <a href="cart-page.html" aria-label="Shopping bag">
+        <div class="cartNotification"></div>
         <img class="headerSvg" src="svg-img/svg/shopping-bag.svg" alt="" aria-hidden="true">
       </a>
     </div>
@@ -77,7 +78,7 @@
         <a class="navLink navHome" href="index.html" aria-current="page">Home</a>
         <a class="navLink" href="shoppingpage.html">Woman</a>
         <a class="navLink" href="shoppingpage.html">Men</a>
-        <a class="navLink" href="cart-page.html">Shoppingcart</a>
+        <a class="navLink" href="cart-page.html">Shoppingbag</a>
       </nav>
     </div>
 
@@ -96,13 +97,14 @@
         <img class="genderPhoto" src="svg-img/img/tinified/woman-on-cliff.png"
           alt="Hiking woman in a yellow rainjacket standing in a cliff">
 
-          <button class="genderBtn" id="femaleBtn"> WOMEN</button>
+        <button class="genderBtn" id="femaleBtn"> WOMEN</button>
         <!-- <a  href="comingsoon-page.html">WOMEN</a> -->
       </div>
+
       <div class="pictureDiv">
         <img class="genderPhoto" src="svg-img/img/tinified/man-on-cliff.png"
           alt="Hiking man in a red jacket standing in a cliff">
-         <button class="genderBtn" id="maleBtn">MEN</button>
+        <button class="genderBtn" id="maleBtn">MEN</button>
 
       </div>
     </div>
@@ -112,57 +114,35 @@
         <img class="genderPhotoSingle" src="svg-img/img/tinified/person-in-raincoat-hiking.png"
           alt="Hiking woman in a yellow rainjacket standing in a cliff">
         <div class="genderButtonsDiv">
-          <a class="genderBtn" href="comingsoon-page.html">WOMEN</a>
-          <a class="genderBtn" href="comingsoon-page.html">MEN</a>
+          <a class="genderBtn" id="femaleBtnMob">WOMEN</a>
+          <a class="genderBtn" id="maleBtnMob">MEN</a> <button class="genderBtn" id="getAllMob">All</button>
         </div>
       </div>
     </div>
 
     <section class="bestsellerDiv" aria-labelledby="bestsellers-title">
-      <h1><div class="bestsellerLink headingMainpage" href="shoppingpage.html" id="bestsellers-title">Our Bestsellers
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="40" height="40" viewBox="0 0 24 24"
-            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M5 12l14 0" />
-            <path d="M13 18l6 -6" />
-            <path d="M13 6l6 6" />
-          </svg> -->
-        </div></h1>
+      <div class="bestesellerDivDesktop">
+        <h1 class="bestsellerLink headingMainpage" id="bestsellers-title">
+          Our Bestsellers
+        </h1>
+        <button class="getAll" id="getAllDesktop">Show all products</button>
+      </div>
 
-      <div class="" id="gridContainerHomepage" role="list">
+      <div class="skeleton-card-container">
+        <div class="skeletonCard"></div>
+        <div class="skeletonCard"></div>
+        <div class="skeletonCard"></div>
+        <div class="skeletonCard"></div>
+        <div class="skeletonCard"></div>
+        <div class="skeletonCard"></div>
+      </div>
+      <div  id="gridContainerHomepage" role="list">
 
 
-        <!-- <a href="item-page.html" role="listitem" class="card" aria-labelledby="patagonia-title1">
-          <img class="cardImg" src="svg-img/img/jackets-img/Vector.png" alt="Mossbrown colored inner Fleece Jacket">
-          <div class="cardTextDiv">
-            <p class="itemName" id="patagonia-title1">Patagonia Fleece Men</p>
-            <p class="itemPrice">899,00 kr</p>
-            <span class="visually-hidden">Color: Mossbrown</span>
-            <div style="background-color: #6D6244;" aria-hidden="true" class="colorCircle"></div>
-          </div>
-        </a>
-        <a class="card" href="comingsoon-page.html" role="listitem" aria-labelledby="shell-jacket-woman-title1">
-          <img class="cardImg" src="svg-img/img/jackets-img/Vector-3.png" alt="metalic black shell jacket">
-          <div class="cardTextDiv">
-            <p id="shell-jacket-woman-title1" class="itemName">Shell Jacket Women</p>
-            <p class="itemPrice">1299,00 kr</p>
-            <span class="visually-hidden">Color: silver black</span>
-            <div class="colorCircle" style="background-color: #2E2E2E ;" aria-hidden="true"></div>
-          </div>
-        </a>
-        <a class="card" href="comingsoon-page.html" role="listitem" aria-labelledby="scott-goretex-title1">
-          <img class="cardImg" src="" alt="">
-          <div class="cardTextDiv">
-            <p id="" class="itemName">   </p>
-            <p class="itemPrice"> kr</p>
-            <span class="visually-hidden">Color: black and gray</span>
-            <div class="colorCircle" style="background-color: #3F3F3F ;" aria-hidden="true"></div>
-          </div>
-        </a> -->
+
+        <!-- Cards goes here -->
       </div>
     </section>
-
   </main>
 
   <section class="memberDiv" aria-label="Become a member of Rainy Days">
@@ -246,6 +226,7 @@
 
   </footer>
   <script type="module" src="api.js"></script>
+  <script type="module" src="header.js"></script>
 </body>
 
 </html>
