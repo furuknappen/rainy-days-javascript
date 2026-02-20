@@ -130,6 +130,12 @@ label {
   height: 4rem;
   width: 4rem;
 }
+.cartTitle{
+  font-size: 0.8rem;
+  margin-right: 0.5rem
+
+}
+
 
 .totalDiv {
   margin-top: 0.5rem;

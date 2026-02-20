@@ -1,29 +1,32 @@
 .card {
-
+  font-family: var(--main-font);
   border: 1px solid #b8b4b4;
   display: flex;
   flex-direction: column;
   border-radius: var(--borderRadius);
-  /* width: 100%; */
-
   color: black;
 }
 
-.imgDiv{
- /* border: 2px solid red; */
- height: 300px;
- display: flex;
- justify-content: center;
- padding-block: 1rem
+.card:hover{
+  background-color: rgb(240, 240, 240);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.imgDiv {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  padding-block: 1rem
 }
 
 .cardImg {
-  max-height:100% ;
+  max-height: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 4px;
-  
- /* border: 2px solid red; */
 }
 
 .cardTextDiv {
@@ -34,7 +37,6 @@
   flex-direction: column;
   justify-content: space-between;
   text-wrap: wrap;
-
 }
 
 .itemName {
@@ -45,12 +47,16 @@
 }
 
 .itemPrice {
-  font-size: clamp(1rem, 2vw, 2.5rem);
+  font-size: clamp(1rem, 3vw, 2.5rem);
   font-family: var(--main-font);
   padding-top: 1rem;
+  font-weight: 500
 
 }
-
+.beforePrice{
+  font-size: 0.9rem;
+  color: rgb(112, 111, 111);
+}
 .colorCircle {
   background-color: rgb(0, 0, 0);
   width: 20px;
@@ -69,7 +75,7 @@
   }
 
   .itemName {
-    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-size: clamp(1rem, 1.2vw, 2rem);
 
   }
 
@@ -85,4 +91,11 @@
     margin-top: 1.2em;
   }
 
+  .imgDiv {
+    height: 300px;
+  }
+  .beforePrice{
+  font-size: 1.1rem;
+  color: rgb(112, 111, 111);
+}
 }

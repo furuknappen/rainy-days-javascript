@@ -1,7 +1,9 @@
 .flexDivItemPage {
-  font-family:  var(--main-font);
-  position:relative;
+  font-family: var(--main-font);
+  position: relative;
+
 }
+
 .content {
   display: flex;
   justify-content: center;
@@ -11,16 +13,18 @@
 }
 
 .itemImage {
-  width:100%;
+  width: 100%;
 }
 
 .textSide {
   padding-block: 5rem;
 }
-.statusInfo{
+
+.statusInfo {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
 }
+
 .h1Itemname {
   font-family: var(--main-font);
   padding-inline: 0px;
@@ -40,11 +44,11 @@
   margin-block: 1.5rem;
 }
 
-.buttonDiv{
-display:flex
+.buttonDiv {
+  display: flex
 }
 
-.size-radio{
+.size-radio {
   display: absolute;
   pointer-events: none;
   opacity: 0;
@@ -52,10 +56,10 @@ display:flex
   height: 1;
 }
 
-.size-radio:checked + .sizeBtn{
- background-color: var(--accentColor2);
+.size-radio:checked+.sizeBtn {
+  background-color: var(--accentColor2);
 }
- 
+
 
 .sizeBtn {
   padding: 0.5rem;
@@ -66,7 +70,7 @@ display:flex
   border-style: solid;
   margin: 0.2rem;
   font-size: 1rem;
-  cursor:pointer;
+  cursor: pointer;
   /* font-weight:500 */
 }
 
@@ -74,32 +78,33 @@ display:flex
   margin-block: 2rem;
 }
 
-#noSizeError{
+#noSizeError {
   display: none;
   align-items: center;
   border: 3px solid rgb(243, 37, 37);
   background-color: rgb(248, 118, 118);
   color: rgb(253, 247, 247);
   font-weight: 500;
-  letter-spacing: 1px ;
+  letter-spacing: 1px;
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: var(--borderRadius);
 }
 
-#noSizeError svg{
+#noSizeError svg {
   margin-right: 1rem
 }
-.toastNotification{
-  position: absolute;
-  display:flex;
+
+.toastNotification {
+  position: fixed;
+  display: flex;
   align-items: center;
-  top: 0px;
+  top: 0.5rem;
   right: 0.5rem;
   padding: 1.5rem;
-  background-color: rgb(12, 165, 50);
-  width: 25rem;
-  border-radius:var(--borderRadius);
+  background-color: rgb(10, 155, 46);
+  width: 95%;
+  border-radius: var(--borderRadius);
   color: white;
   /* would be fun, but difficult: */
   /* opacity: 1;
@@ -119,24 +124,25 @@ display:flex
   text-decoration: none;
 }
 
-.cartBtn{
+.cartBtn {
   position: relative;
 }
 
-.priceContainer{
+.priceContainer {
   font-size: 1.2rem;
-  padding-top: 0.8rem ;
+  padding-top: 0.8rem;
 }
 
-.price{
+.price {
   font-size: 1.5rem;
-  padding-bottom: 0.3rem ;
+  padding-bottom: 0.3rem;
 }
+
 .gray {
   color: rgb(112, 112, 112)
 }
 
-.beforePriceDiv{
+.beforePriceDiv {
   font-size: 0.9rem;
 }
 
@@ -148,7 +154,7 @@ display:flex
     width: 30rem;
   }
 
-  .itemImage{
+  .itemImage {
     padding-inline: 4rem;
     width: auto;
     height: 30rem
@@ -162,64 +168,78 @@ display:flex
     flex-direction: row;
     align-items: center;
     margin-bottom: 9rem;
-}
+  }
+
+  .toastNotification {
+    width: 25rem;
+    position: absolute;
+    top: 0px
+  }
 
 }
 
- 
+
 /* ---------- skeleton -------------  */
-.skeleton-container{
+.skeleton-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .content {
-  display:none;
+  display: none;
 }
 
 .skeleton-image,
-.skeleton-heading, 
+.skeleton-heading,
 .skeleton-text div,
 .skeleton-size,
-.skeleton-button
-{
+.skeleton-button {
   width: 500px;
   /* background-color: rgb(129, 127, 127); */
   height: 1rem;
-  margin:1rem;
+  margin: 1rem;
   background: linear-gradient(90deg, #dadada 25%, rgb(243, 242, 242) 50%, #dadada 75%);
   background-size: 200% 100%;
   animation: loading 4s infinite;
 }
 
 @keyframes loading {
-  0% {background-position:  0% 0}
-  50% {background-position: 200% 0;}
-  100% {background-position: 0% 0}
-} 
+  0% {
+    background-position: 0% 0
+  }
+
+  50% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: 0% 0
+  }
+}
 
 
-.skeleton-image{
+.skeleton-image {
   height: 500px
 }
 
-.skeleton-heading{
- height: 5rem;
- margin-bottom: 4rem
+.skeleton-heading {
+  height: 5rem;
+  margin-bottom: 4rem
 }
 
-.skeleton-size{
+.skeleton-size {
   height: 3rem;
   width: 19rem;
   margin-top: 5rem;
 
 }
 
-.skeleton-button{ 
+.skeleton-button {
   height: 4rem;
   width: 19rem;
-  margin-top: 2rem
-
+  margin-top: 2rem;
+  margin-bottom: 10.8rem
 }
 
 /* ---------- skeleton STOP-------------  */

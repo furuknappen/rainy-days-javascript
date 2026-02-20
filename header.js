@@ -1,5 +1,5 @@
-
-
+'use strict';
+//TODO: make notifications show up on homepage too
 
 export function rerenderCartNotification() {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -26,5 +26,5 @@ export function rerenderCartNotification() {
   } 
 
 }
-rerenderCartNotification();
+// rerenderCartNotification();
 
