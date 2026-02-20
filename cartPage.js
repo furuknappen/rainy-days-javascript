@@ -1,3 +1,4 @@
+'use strict';
 const productDisplay = document.querySelector(".productContainer");
 
 // const items = JSON.parse(localStorage.getItem("cart"))
@@ -12,6 +13,9 @@ if (cart.length == 0) {
   noItems.classList.add("noItems");
   noItems.textContent = "No items in cart";
   document.querySelector(".productContainer").append(noItems);
+  document.querySelector("#goToCheckout").classList.add("disabled"); 
+  document.querySelector("#goToCheckout").title= "No item in cart"
+  
 }
 
 cart.forEach((item, index) => {
@@ -73,7 +77,7 @@ cart.forEach((item, index) => {
   totalPrice += price;
 
 
-
+ document.querySelector("#goToCheckout").href = "checkout-page.html"; 
   
 });
 

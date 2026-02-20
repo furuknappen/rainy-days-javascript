@@ -179,6 +179,12 @@ hr {
   font-size: 1.2rem;
   display: inline-block;
 }
+.disabled{
+  opacity: 0.4;
+}
+.disabled:hover{
+  cursor: not-allowed;
+}
 
 .backToBtnDivCart {
   order: 3;
