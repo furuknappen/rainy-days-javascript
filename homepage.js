@@ -109,26 +109,35 @@ const femaleJackets = jackets.filter((jacket) => {
 const maleJackets = jackets.filter((jacket) => {
   return jacket.gender == "Male";
 });
-
+const heading = document.getElementById("homepage-title")
 document.getElementById("femaleBtn").addEventListener("click", () => {
   createHomePage(femaleJackets);
+  heading.textContent = "Female Jackets"
 });
 document.getElementById("maleBtn").addEventListener("click", () => {
   createHomePage(maleJackets);
+   heading.textContent = "Male Jackets"
+
 });
 
 document.getElementById("femaleBtnMob").addEventListener("click", () => {
   createHomePage(femaleJackets);
+   heading.textContent = "Female Jackets"
 });
 document.getElementById("maleBtnMob").addEventListener("click", () => {
   createHomePage(maleJackets);
+   heading.textContent = "Male Jackets"
 });
 
 document.getElementById("getAllMob").addEventListener("click", () => {
   createHomePage(jackets);
+  
+   heading.textContent = "All Jackets"
 });
 document.getElementById("getAllDesktop").addEventListener("click", () => {
   createHomePage(jackets);
+   heading.textContent = "All Jackets"
+
 });
 
 
