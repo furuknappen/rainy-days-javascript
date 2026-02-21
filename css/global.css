@@ -5,13 +5,10 @@
 }
 
 a {
-  /* color:black; */
   text-decoration: none;
 }
 
-/* a:focus {
-  border: 2px solid var(--accentColor3);
-} */
+
 
 a:hover {
   text-decoration: underline;

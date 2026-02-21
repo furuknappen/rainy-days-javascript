@@ -1,5 +1,4 @@
 .genderPhotoDiv {
-  /* background-color: aqua; */
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -11,7 +10,6 @@
 }
 
 .pictureDiv {
-  /* background: orange; */
   display: flex;
   width: 100vw;
   display: flex;
@@ -31,8 +29,6 @@
 }
 
 .genderBtn {
-  /* position:static; */
-  /* display:block; */
   margin: 5vw;
   margin-right: 1vw;
   border-radius: var(--borderRadius);
@@ -163,7 +159,6 @@
   .bestesellerDivDesktop {
     display: flex;
     flex-direction: row;
-    /* background-color: red; */
     justify-content: space-between;
   }
 
@@ -229,8 +224,8 @@
     width: 20rem;
     height: 30rem;
     border-radius: var(--borderRadius);
-   
-      margin: 1rem
+
+    margin: 1rem
   }
 }
 

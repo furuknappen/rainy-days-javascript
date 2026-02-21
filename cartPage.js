@@ -1,7 +1,5 @@
-'use strict';
+"use strict";
 const productDisplay = document.querySelector(".productContainer");
-
-// const items = JSON.parse(localStorage.getItem("cart"))
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -13,16 +11,15 @@ if (cart.length == 0) {
   noItems.classList.add("noItems");
   noItems.textContent = "No items in cart";
   document.querySelector(".productContainer").append(noItems);
-  document.querySelector("#goToCheckout").classList.add("disabled"); 
-  document.querySelector("#goToCheckout").title= "No item in cart"
-  
+  document.querySelector("#goToCheckout").classList.add("disabled");
+  document.querySelector("#goToCheckout").title = "No item in cart";
 }
 
 cart.forEach((item, index) => {
   const productLine = document.createElement("div");
   productLine.classList.add("product-line");
   const image = document.createElement("img");
-  console.log(item);
+
   image.src = item.image.url;
   image.alt = item.image.alt;
 
@@ -32,19 +29,17 @@ cart.forEach((item, index) => {
   const title = document.createElement("p");
   let size = document.createElement("p");
   size.textContent = `Size: ${item.selectedSize}`;
-  console.log("selected size: " + item.selectedSize);
 
   let price = document.createElement("p");
   price.classList.add("itemInfo");
   if (item.onSale) {
     price.textContent = item.discountedPrice + "kr";
-    price = item.discountedPrice; 
-    totalDiscount += (item.price - item.discountedPrice) 
+    price = item.discountedPrice;
+    totalDiscount += item.price - item.discountedPrice;
   } else {
     price.textContent = item.price + "kr";
     price = item.price;
   }
-  console.log("prise is: " + price);
 
   title.classList.add("itemInfo");
   title.textContent = item.title;
@@ -71,19 +66,13 @@ cart.forEach((item, index) => {
   trashBtn.addEventListener("click", () => {
     removeItemFromCart(index);
   });
-  // document.querySelector('.productContainer').appendChild(productLine);
-
 
   totalPrice += price;
-
-
- document.querySelector("#goToCheckout").href = "checkout-page.html"; 
-  
+  document.querySelector("#goToCheckout").href = "checkout-page.html";
 });
 
-
-console.log("total " + totalDiscount);
-document.querySelector(".discounted").textContent = totalDiscount.toFixed(2) + " kr";
+document.querySelector(".discounted").textContent =
+  totalDiscount.toFixed(2) + " kr";
 document.querySelector(".totalPrice").textContent = totalPrice.toFixed(2);
 
 function removeItemFromCart(index) {

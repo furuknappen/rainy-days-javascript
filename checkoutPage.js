@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 const miniCartContainer = document.querySelector(".miniCartContainer");
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -13,7 +13,7 @@ cart.forEach((item) => {
 
   const title = document.createElement("p");
   title.classList.add("itemInfo", "cartTitle");
-  title.textContent = item.title
+  title.textContent = item.title;
 
   let price = document.createElement("span");
   price.classList.add("itemInfo");
@@ -29,14 +29,14 @@ cart.forEach((item) => {
   product.append(image, title, price);
   miniCartContainer.append(product);
 
-  totalPrice += price 
-
+  totalPrice += price;
 });
 
-document.querySelector(".totalPrice").textContent = totalPrice.toFixed(2) + " kr"
+document.querySelector(".totalPrice").textContent =
+  totalPrice.toFixed(2) + " kr";
 
 const checkoutBtn = document.querySelector(".checkoutBtn");
 
-checkoutBtn.addEventListener("click", ()=> {
-  localStorage.clear()
+checkoutBtn.addEventListener("click", () => {
+  localStorage.clear();
 });

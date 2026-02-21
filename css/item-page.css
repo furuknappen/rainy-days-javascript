@@ -71,7 +71,6 @@
   margin: 0.2rem;
   font-size: 1rem;
   cursor: pointer;
-  /* font-weight:500 */
 }
 
 .buttonDiv {
@@ -106,9 +105,6 @@
   width: 95%;
   border-radius: var(--borderRadius);
   color: white;
-  /* would be fun, but difficult: */
-  /* opacity: 1;
-  transition: ease-in-out 0.9s, transform 0.9s; */
 }
 
 .toastNotification svg {
@@ -196,7 +192,6 @@
 .skeleton-size,
 .skeleton-button {
   width: 500px;
-  /* background-color: rgb(129, 127, 127); */
   height: 1rem;
   margin: 1rem;
   background: linear-gradient(90deg, #dadada 25%, rgb(243, 242, 242) 50%, #dadada 75%);

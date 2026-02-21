@@ -1,7 +1,4 @@
 .memberDiv {
-  /* display:flex; */
-  /* flex-direction: column;
-  justify-content: center; */
   padding: 1rem;
   text-align: center;
   background-color: var(--accentColor4);
@@ -38,7 +35,6 @@
 
 /* .............. iPads (tablets) - Landscape ............ */
 @media (min-width: 769px)
-/*and (max-width: 1024px) */
   {
   .memberDiv h1 {
     font-size: 3rem;

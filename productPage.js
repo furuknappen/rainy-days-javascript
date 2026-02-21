@@ -1,10 +1,9 @@
-'use strict';
-import {rerenderCartNotification} from "./header.js"
+"use strict";
+import { rerenderCartNotification } from "./header.js";
 
-// const productId = "07a7655a-7927-421b-ba6a-b6742d5a75b8";
-// const onsaleId = "97e77845-a485-4301-827f-51b673d4230f"
 
-const base_url = "https://v2.api.noroff.dev";
+
+const base_url = "https://v2.api.nooroff.dev";
 
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("id");
@@ -22,16 +21,13 @@ async function fetchData() {
 
     return item;
   } catch (error) {
-    console.log("something went wrong " + error);
+    alert("Could not fetch data: " + error)
   }
 }
 
-// const items = await fetchData();
-// console.log(items);
 let notificationCartNumber = "";
 async function displayItem() {
   const item = await fetchData();
-  // console.log("Full item object:", item);
   document.querySelector(".itemImage").src = item.image.url;
   document.querySelector(".itemImage").alt = item.image.alt;
   document.querySelector(".h1Itemname").textContent = item.title;
@@ -39,22 +35,13 @@ async function displayItem() {
   document.querySelector(".itemColor").textContent = item.baseColor;
   document.querySelector(".infoText").textContent = item.description;
 
-    if (item.favorite) {
+  if (item.favorite) {
     const popular = document.createElement("p");
     popular.textContent = "Popular this month!";
-    popular.classList.add("statusInfo")
-    console.log("popular!");
+    popular.classList.add("statusInfo");
+
     document.querySelector(".statusInfo").appendChild(popular);
   }
-  // const size = item.sizes.forEach((size) => {
-  //   console.log(size);
-  //   const sizeBtn = document.createElement("button");
-  //   sizeBtn.type = "radio"
-  //   sizeBtn.classList.add("sizeBtn");
-  //   sizeBtn.ariaLabel = "Select size " + size;
-  //   sizeBtn.textContent = size;
-  //   document.querySelector(".buttonDiv").appendChild(sizeBtn);
-  // });
 
   const size = item.sizes.forEach((size) => {
     const radioInput = document.createElement("input");
@@ -77,7 +64,7 @@ async function displayItem() {
   const price = document.createElement("p");
 
   if (item.onSale === true) {
-    console.log("on sale!");
+
     const onsale = document.createElement("p");
     onsale.textContent = "On sale!";
     price.textContent = item.discountedPrice + " kr";
@@ -92,7 +79,7 @@ async function displayItem() {
   } else {
     price.textContent = item.price + " kr";
     document.querySelector(".priceContainer").append(price);
-    console.log("not on sale...");
+
   }
 
   const addToCartBtn = document.getElementById("addToCartBtn");
@@ -120,32 +107,22 @@ async function displayItem() {
 
 function addToCart(item, size) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
-  const cartItem ={
+  const cartItem = {
     ...item,
-    selectedSize: size 
-  }
+    selectedSize: size,
+  };
 
   cart.push(cartItem);
   localStorage.setItem("cart", JSON.stringify(cart));
-  // console.log("added to cart " + cart.length, selectedSize);
   displayToastNotification(item);
   setTimeout(() => {
-    removeToastNotification()
+    removeToastNotification();
   }, 2000);
 
- rerenderCartNotification()
-
-
-  // fortsett her
-  // document.querySelector(".cartNotification").textContent = cart.length;
-  // console.log("cart length: " + notificationCartNumber);
-
-  // notificationCartHeader.classList.add(".cartNotification");
-  // notificationCartNumber.textContent = "yes";
+  rerenderCartNotification();
 }
 
 const cartContent = localStorage.getItem("cart");
-// console.log("things in cart: " + cartContent);
 
 // SKELETON CODE
 window.onload = async function () {
@@ -160,7 +137,6 @@ window.onload = async function () {
   skeleton.style.display = "none";
 };
 
-// TODO: fix toastnotification, it dosent remove itself and its unreliable
 // TOAST NOTIFICATION
 function displayToastNotification(item) {
   const toastDiv = document.createElement("div");
@@ -176,5 +152,5 @@ function displayToastNotification(item) {
 }
 
 function removeToastNotification() {
-  document.querySelector(".toastNotification").remove()
+  document.querySelector(".toastNotification").remove();
 }
