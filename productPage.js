@@ -3,7 +3,7 @@ import { rerenderCartNotification } from "./header.js";
 
 
 
-const base_url = "https://v2.api.nooroff.dev";
+const base_url = "https://v2.api.noroff.dev";
 
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("id");
